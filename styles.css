@@ -1,0 +1,242 @@
+* {
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+
+
+.container-fluid {
+    background-color: #f5f7fa;
+}
+
+.linebottom {
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+
+
+.transparent {
+    background-color: rgba(245, 222, 179, 0);
+}
+
+h1 {
+
+    font-size: 18px;
+    font-weight: 400;
+    color: brown;
+}
+
+.cardGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    ;
+}
+
+.calculateCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    
+
+}
+
+.calculate {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculateCardTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculateCardBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputPercentage {
+    width: 50px !important;
+}
+
+.input-group-text {
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.width150 {
+    width: 150px !important;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.simpleResult {
+    background-color: #D9FBD0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid #9bce8e;
+    text-align: center;
+}
+
+.buttonProperties{
+    background-color: #5d87ff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: center;
+}
+
+.table {
+    text-align: center;
+    border: 1px solid rgb(194, 194, 194) !important;
+}
+
+.tabla-redondeada {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+        box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+
+}
+
+.tabla-redondeada th,
+.tabla-redondeada td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+.tabla-redondeada tr:last-child td {
+    border-bottom: none;
+}
+
+math {
+    font-size: 18px;
+}
+
+.verde {
+    background-color: rgb(0, 0, 0) !important;
+    color: white;
+}
+
+.whiteColor {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+
+.graphicSimple2,
+.graphicSimple {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.graphicSimple {
+    margin-bottom: 5px;
+}
+
+.graphichChangue1,
+.graphichAmount1,
+.totalGraphicTotal,
+.totalGraphic {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(168, 169, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.graphichChangue2,
+.graphichChangue4,
+.graphichAmount2,
+.graphichAmount4,
+.graphicSimplePercentageTotal2total1,
+.graphicSimplePercentagetotal,
+.graphicSimplePercentage2 {
+    background-color: yellow;
+    height: 50px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease;
+    border-radius: 50px;
+
+}
+
+.graphichChangue3,
+.graphichChangue5,
+.graphichAmount3,
+.graphichAmount5,
+.graphicSimplePercentageTotalTotal,
+.graphicSimplePercentageTotal2 {
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    transition: width 1s ease;
+    border-radius: 50px;
+
+}
+
+.graphicSimplePercentage {
+    background-color: yellow;
+    height: 50px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease;
+    border-radius: 50px;
+
+}
+
+.graphicSimplePercentageTotal2total,
+.graphicSimplePercentageTotal {
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    transition: width 1s ease;
+    border-radius: 50px;
+
+}
+
+.percentageSection {
+    margin: 15px 0px;
+}
+
+.columnsection {
+    display: flex;
+    flex-direction: column;
+}
