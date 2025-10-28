@@ -13,31 +13,292 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" type="image/x-icon" href="/calculator/pictures/descuento.png">
 </head>
 
 <body>
-    <div class="container-fluid linebottom">
-        <div class="container transparent ">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/calculator/index.html">
+                <img src="/calculator/pictures/descuento.png" alt="Logo" width="40" height="40"
+                    class="me-2 rounded-circle">
+                <span class="fw-semibold">CalcPercentage</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/index.html#calculators">Calculators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/theory.html">Theory</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Exercices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Facil</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermedio</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesHard.html">Avanzado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/practices.html">Practicas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <h1 class="text-align" style="margin-top: 50px;">Free Online Percentage Calculators</h1>
+        <p class="text-align">Calculate percentages, discounts, increases, fees, and more — all in one place.<br>
+            Simple tools to help you make fast and accurate percentage calculations online.</p>
+        <div class="btnFirst">
+            <a href="#calculators" class="buttonProperties">Start Now</a>
+
+        </div>
+
+        <div class="maincalculatorcontent">
+            <div class="containercalculatormain">
+                <i class="bi bi-currency-dollar icon"></i>
+                <h4>Discount Calculator <br>Simple</h4>
+                <p class="text-secondary">Example: Simple <br> a store discount </p>
+                <button class="buttonProperties my-3" onclick="calculateMain()">Calculate</button>
+
+                <div class="maincalculator">
+                    <h2>If a product costs</h2>
+                    <input class="form-control width150 d-inline-flex" type="number" placeholder="Price ($)" id="price">
+
+                    <h2>and has</h2>
+                    <div class="input-group width150 d-inline-flex">
+                        <input type="number" class="form-control" id="discount" value="25" min="0" max="100">
+                        <span class="input-group-text">%</span>
+                    </div>
+
+                    <h2>discount, </h2>
+                    <h2>The final price is</h2>
+                    <div class="input-group width150 d-inline-flex">
+                        <input type="text" class="form-control" id="finalPrice" readonly>
+                        <span class="input-group-text">$</span>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
+
+            <div class="containercalculatormain">
+                <i class="bi bi-tags-fill icon"></i>
+                <h4>Double Discount Calculator</h4>
+                <p class="text-secondary">Example: a store discount + an extra coupon discount</p>
+                <button class="buttonProperties my-3" onclick="calculateMain2()">Calculate</button>
+
+                <div class="maincalculator">
+                    <h2>If a product costs</h2>
+                    <input class="form-control width150 d-inline-flex" type="number" placeholder="Price ($)"
+                        id="price2">
+
+                    <h2>and has a store discount of</h2>
+                    <div class="input-group width150 d-inline-flex">
+                        <input type="number" class="form-control" id="discount1" value="20" min="0" max="100">
+                        <span class="input-group-text">%</span>
+                    </div>
+
+                    <h2>and you also have a coupon of</h2>
+                    <div class="input-group width150 d-inline-flex">
+                        <input type="number" class="form-control" id="discount2" value="10" min="0" max="100">
+                        <span class="input-group-text">%</span>
+                    </div>
+                    <h2>off,</h2>
+                    <div class="result-box" id="result"></div>
+                </div>
+            </div>
+            <div class="containercalculatormain">
+                <i class="bi bi-house-door-fill icon"></i>
+                <h4>Calculadora de Cuota Inicial</h4>
+                <p class="text-secondary">Ejemplo: si un departamento cuesta S/ 350,000 y debes pagar 10% de inicial</p>
+                <button class="buttonProperties my-3" onclick="calculateInitial()">Calcular</button>
+
+                <div class="maincalculator">
+                    <h2>Si el departamento cuesta</h2>
+                    <input class="form-control width150 d-inline-flex" type="number" placeholder="Precio (S/)"
+                        id="price3" value="350000">
+
+                    <h2>y debo pagar una inicial del</h2>
+                    <div class="input-group width150 d-inline-flex">
+                        <input type="number" class="form-control" id="initialPercent" value="10" min="0" max="100">
+                        <span class="input-group-text">%</span>
+                    </div>
+
+                    <br><br>
+
+                    <div class="result-box" id="result3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="teory">
+            <h2>What Are Percentage Calculators?</h2>
+            <p>Percentage calculators are tools that help you find increases, decreases, and proportions
+                without doing manual math. They’re perfect for everyday use — from calculating discounts when shopping
+                to figuring out business growth, taxes, or investment returns.</p>
+
+
+        </div>
+        <section class="container percentage-calculator py-5">
+            <div class="container text-center">
+                <div class="calculator-card rounded-4 p-5 mx-auto mt-5" style="max-width: 480px;">
+                    <div class="icon-circle bg-dark bg-gradient mb-3 mx-auto">
+                        <i class="bi bi-percent"></i>
+                    </div>
+                    <h2 class="fw-bold text-gradient mb-3">Quick Percentage Calculator</h2>
+                    <p class="text-muted mb-4">Try a quick example below 👇</p>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-123"></i></span>
+                            <input type="number" id="num10" class="form-control" placeholder="Value (e.g. 200)" />
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-graph-up"></i></span>
+                            <input type="number" id="num20" class="form-control" placeholder="Percentage (e.g. 25)" />
+                        </div>
+
+                        <button onclick="calculates()" class="buttonProperties my-3">
+                            <i class="bi bi-calculator"></i> Calculate
+                        </button>
+                    </div>
+
+                    <div id="resultBox" class="mt-4">
+                        <p id="resultCalculate" class="fs-5 fw-semibold text-success"></p>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </div>
-    <div style="background-color: #f5f7fa;">
+            </div>
+        </section>
+        <section class="usos py-5">
+            <div class="container usosinterno text-center">
+                <h1>Uses of Percentages</h1>
 
-        <div class="container py-5">
-            <h1>contenido</h1>
+                <div class="row g-4 cards-container">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-bag-check"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Shopping Discounts</h3>
+                                <p>Irresistible offers? Thanks to the percentage! Easily calculate how much you'll save.
+                                </p>
+                                <ul class="list-unstyled text-start">
+                                    <li>🛍️ <strong>S/200 with 25% discount</strong> → you pay <strong>S/150</strong>.
+                                    </li>
+                                    <li>💥 “<strong>70% OFF</strong>” means a big discount off the original price.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-cash-coin"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Finance and Economics</h3>
+                                <p>Percentages drive the world of money: interest, inflation, taxes... everything!</p>
+                                <ul class="list-unstyled text-start">
+                                    <li>💰 <strong>8% interest</strong> on S/1000 → you earn <strong>S/80</strong> per
+                                        year.</li>
+                                    <li>📉 <strong>6% inflation</strong> reduces your purchasing power.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-bar-chart-line"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Statistics</h3>
+                                <p>Surveys? Data? Percentages tell stories without a thousand numbers.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li>📊 <strong>72%</strong> say “Yes” → 3 out of 4 agree.</li>
+                                    <li>🚬 <strong>18%</strong> smoke → social analysis in action.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100  border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-book"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Education</h3>
+                                <p>Pass or fail? Percentages tell you if you made it.</p>
+                                <ul class="list-unstyled text-start">
+                                    <li>📘 45 out of 50 points → <strong>90% grade</strong>!</li>
+                                    <li>🎯 At least <strong>70%</strong> required to pass a subject.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-heart-pulse"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Health</h3>
+                                <p>From body fat to medical effectiveness, percentages help take care of your health
+                                    too!</p>
+                                <ul class="list-unstyled text-start">
+                                    <li>💪 <strong>22% body fat</strong>: within the healthy range.</li>
+                                    <li>💊 Treatment effective in <strong>85% of cases</strong>.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 card-hover">
+                            <div class="card-body">
+                                <div class="icon-circle colorgreen bg-gradient mb-3">
+                                    <i class="bi bi-calculator"></i>
+                                </div>
+                                <h3 class="h5 fw-bold mb-3">Percentages in Everyday Life</h3>
+                                <p>Percentages save you at the restaurant or in the kitchen—literally!</p>
+                                <ul class="list-unstyled text-start">
+                                    <li>🍽️ <strong>10% tip</strong> on S/150 → you leave <strong>S/15</strong>.</li>
+                                    <li>👨‍🍳 Cooking for 2 → cut the recipe by <strong>50%</strong>.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5" id="calculators">
+            <h1 class="text-center">Percentage Calculators</h1>
             <div class="percentageSection">
+
                 <div class="row">
                     <div class="col-6">
                         <div class="calculateCard">
@@ -57,7 +318,8 @@
                                 </div>
 
                                 <div class="calculateCardBottom">
-                                    <button class="buttonProperties my-3" onclick="calculateSimple()">Calcular</button>
+                                    <button class="buttonProperties my-3 width150"
+                                        onclick="calculateSimple()">Calcular</button>
                                     <input id="resultado" class="simpleResult" placeholder="125" disabled>
                                 </div>
                             </div>
@@ -66,7 +328,7 @@
 
                     <div class="col-3 d-flex flex-column justify-content-between">
                         <table class="tabla-redondeada">
-                            <thead class="verde">
+                            <thead class="colorCabecera">
                                 <tr>
                                     <th scope="col"><math>
                                             <mi>n</mi>
@@ -93,7 +355,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="cardGeneral" id="formula">
+                        <div class="cardGeneral borderTop" id="formula">
                             <math display="block">
                                 <mi>x</mi>
                                 <mo>=</mo>
@@ -138,7 +400,7 @@
                                 <div class="calculateCardTop">
                                     <span>If </span>
                                     <div class="input-group width150">
-                                        <input type="number" class="form-control" id="num1Total" value="10" min="0">
+                                        <input type="number" class="form-control" id="num1Total" value="25" min="0">
                                         <div class="input-group-append">
                                             <span class="input-group-text">%</span>
                                         </div>
@@ -151,8 +413,9 @@
                                 </div>
 
                                 <div class="calculateCardBottom">
-                                    <button class="buttonProperties my-3" onclick="calculateTotal()">Calcular</button>
-                                    <input id="resulTotal" class="simpleResult" placeholder="500" disabled>
+                                    <button class="buttonProperties my-3 width150"
+                                        onclick="calculateTotal()">Calcular</button>
+                                    <input id="resulTotal" class="simpleResult" placeholder="200" disabled>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +423,7 @@
 
                     <div class="col-3 d-flex flex-column justify-content-between">
                         <table class="tabla-redondeada">
-                            <thead class="verde">
+                            <thead class="colorCabecera">
                                 <tr>
                                     <th scope="col"><math>
                                             <mi>n</mi>
@@ -193,7 +456,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="cardGeneral" id="formulaTotal">
+                        <div class="cardGeneral borderTop" id="formulaTotal">
                             <math display="block">
                                 <mi>x</mi>
                                 <mo>=</mo>
@@ -216,14 +479,14 @@
 
                     <div class="col-3">
                         <div class="cardGeneral h-100">
-                            <div id="totalGraphicTotal" class="totalGraphicTotal">Total: 500</div>
+                            <div id="totalGraphicTotal" class="totalGraphicTotal">Total: 200</div>
                             <div class="graphicSimple">
-                                <div class="graphicSimplePercentageTotal2total1">10%</div>
-                                <div class="graphicSimplePercentageTotalTotal">90%</div>
+                                <div class="graphicSimplePercentageTotal2total1">25%</div>
+                                <div class="graphicSimplePercentageTotalTotal">75%</div>
                             </div>
                             <div class="graphicSimple2">
-                                <div class="graphicSimplePercentagetotal">125</div>
-                                <div class="graphicSimplePercentageTotal2total">375</div>
+                                <div class="graphicSimplePercentagetotal">50</div>
+                                <div class="graphicSimplePercentageTotal2total">150</div>
                             </div>
                         </div>
                     </div>
@@ -239,13 +502,13 @@
                                     <span>If the total is </span>
                                     <input class="form-control width150" type="number" id="amount1" value="200" min="0">
                                     <span>then</span>
-                                    <input class="form-control width150" type="number" id="amount2" value="40" min="0">
+                                    <input class="form-control width150" type="number" id="amount2" value="50" min="0">
                                     <span>, represents:
                                     </span>
                                 </div>
 
                                 <div class="calculateCardBottom">
-                                    <button class="buttonProperties my-3 widthAuto"
+                                    <button class="buttonProperties my-3 width150"
                                         onclick="calculateAmount()">Calcular</button>
                                     <div class="input-group width150">
                                         <input type="number" class="form-control" id="amountResult" value="20" min="0">
@@ -260,7 +523,7 @@
 
                     <div class="col-3 d-flex flex-column justify-content-between">
                         <table class="tabla-redondeada">
-                            <thead class="verde">
+                            <thead class="colorCabecera">
                                 <tr>
                                     <th scope="col"><math>
                                             <mi>n</mi>
@@ -294,7 +557,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="cardGeneral" id="formulaAmount">
+                        <div class="cardGeneral borderTop" id="formulaAmount">
                             <math display="block">
                                 <mi>x</mi>
                                 <mo>=</mo>
@@ -319,8 +582,8 @@
                         <div class="cardGeneral h-100">
                             <div class="graphichAmount1">Total: 200</div>
                             <div class="graphicSimple">
-                                <div class="graphichAmount2">20%</div>
-                                <div class="graphichAmount3">80%</div>
+                                <div class="graphichAmount2">25%</div>
+                                <div class="graphichAmount3">75%</div>
                             </div>
                             <div class="graphicSimple2">
                                 <div class="graphichAmount4">40</div>
@@ -363,7 +626,8 @@
                                 </div>
 
                                 <div class="calculateCardBottom">
-                                    <button class="buttonProperties my-3" onclick="calculateChange()">Calcular</button>
+                                    <button class="buttonProperties my-3 width150"
+                                        onclick="calculateChange()">Calcular</button>
                                     <input class="form-control width150" type="number" id="resultChange" value="5"
                                         min="0">
 
@@ -374,7 +638,7 @@
 
                     <div class="col-3 d-flex flex-column justify-content-between">
                         <table class="tabla-redondeada">
-                            <thead class="verde">
+                            <thead class="colorCabecera">
                                 <tr>
                                     <th scope="col"><math>
                                             <mi>n</mi>
@@ -408,7 +672,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="cardGeneral" id="formulaChange">
+                        <div class="cardGeneral borderTop" id="formulaChange">
                             <math display="block">
                                 <mi>x</mi>
                                 <mo>=</mo>
@@ -444,9 +708,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
 </body>
 <script src="scripts.js"></script>

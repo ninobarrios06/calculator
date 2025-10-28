@@ -1,0 +1,205 @@
+
+:root {
+  --primary: #2ed06e; /* Verde principal: energía y frescura */
+
+  --secondary: #1e293b; /* Gris azulado oscuro para títulos o fondos */
+
+  --accent-light: #22c55e; /* Verde claro complementario (para hover o detalles) */
+
+  --accent-contrast: #10b981; /* Verde medio para botones destacados */
+
+  --text-color: #374151; /* Gris oscuro para texto principal */
+
+  --text-muted: #6b7280; /* Gris medio para texto secundario */
+
+  --bg-light: #f9fafb; /* Fondo claro general */
+
+  --bg-card: #ffffff; /* Fondo para tarjetas o secciones elevadas */
+
+  --border-color: #e5e7eb; /* Bordes suaves */
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--text-color);
+    line-height: 1.7;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent-light) 100%);
+    min-height: 100vh; 
+    padding-top: 5rem; 
+}
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 3.8rem; 
+}
+
+.hero-section p.lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.35rem;
+}
+
+.hero-section .btn-primary {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+}
+
+.hero-graph-placeholder {
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 1.5rem;
+}
+.hero-graph-placeholder .fa-chart-pie {
+    color: #fff !important; /* Asegurar color blanco para el icono en el hero */
+}
+
+
+/* Secciones Generales */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-info { color: #000000 !important; } /* Bootstrap default info */
+.text-success { color: #28a745 !important; } /* Bootstrap default success */
+.text-danger { color: #dc3545 !important; } /* Bootstrap default danger */
+.text-warning { color: #ffc107 !important; } /* Bootstrap default warning */
+
+
+/* Contenido Teórico y Tarjetas */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover.animated-card {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.formula-box {
+    background-color: #e2e8f0;
+    border-left: 5px solid var(--primary);
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.alert-info {
+    background-color: #2ed06e; /* Un azul muy claro */
+    color: #000000;
+    border-left: 5px solid #007bff;
+}
+
+.alert-info .alert-heading {
+    color: #000000;
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* Botones en secciones */
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+.btn-outline-danger {
+    color: var(--danger);
+    border-color: var(--danger);
+}
+.btn-outline-danger:hover {
+    background-color: var(--danger);
+    color: #fff;
+}
+.btn-outline-success {
+    color: var(--success);
+    border-color: var(--success);
+}
+.btn-outline-success:hover {
+    background-color: var(--success);
+    color: #fff;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--secondary) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+footer .fa-heart {
+    color: #e53e3e !important;
+}
+
+/* Responsividad (ajustes menores para pantallas pequeñas) */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+        padding-top: 4rem;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem !important;
+    }
+    .hero-section p.lead {
+        font-size: 1.1rem;
+        margin-bottom: 2rem !important;
+    }
+    .hero-graph-placeholder {
+        height: 200px;
+        margin-top: 3rem !important;
+    }
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+}

@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Fáciles de Porcentajes — Con ejemplos reales</title>
+    <link rel="stylesheet" href="/calculator/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/calculator/index.html">
+                <img src="/calculator/pictures/descuento.png" alt="Logo" width="40" height="40"
+                    class="me-2 rounded-circle">
+                <span class="fw-semibold">CalcPercentage</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/index.html#calculators">Calculators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/theory.html">Theory</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Exercices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Facil</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermedio</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesHard.html">Avanzado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="/calculator/practices.html">Practicas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <div class="container">
+            <header class="text-center my-5">
+                <h1>Ejercicios Nivel Dificil de Porcentajes</h1>
+                <p class="subtitle">
+                    Aprende a calcular porcentajes paso a paso con ejemplos nivel dificil y casos reales del mundo
+                    cotidiano.
+                </p>
+            </header>
+            <section id="excercisesEasy">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-patch-question"></i>
+                                <h5 class="m-0">Ejercicio 1 — Descuento Sucisivo para Precio Meta</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un artículo se vendió originalmente a **S/400**. La tienda quiere
+                                    aplicar tres descuentos sucesivos: **10%**, **20%** y un tercer descuento (X%) para
+                                    que el precio final sea **S/252**. ¿Cuál debe ser el **porcentaje del tercer
+                                    descuento (X%)**?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Precio Inicial</th>
+                                            <td>S/400</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Precio Final</th>
+                                            <td>S/252</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Descuentos Conocidos</th>
+                                            <td>10% y 20%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-dash-circle"></i><strong>Paso 1:</strong> Aplicar los
+                                    descuentos conocidos (Factores: 0.90 y 0.80).
+                                    <code>Precio tras 2 desc. = 400 × 0.90 × 0.80 = 288</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-x-circle"></i><strong>Paso 2:</strong> Determinar la
+                                    diferencia de precio que debe cubrir el tercer descuento.
+                                    <code>Descuento Faltante = 288 - 252 = 36</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Calcular el
+                                    porcentaje de ese descuento faltante (36) respecto al **precio después de los
+                                    primeros dos descuentos** (288).
+                                    <code>X% = (36 / 288) × 100 = 12.5%</code>
+                                </div>
+
+                                <div class="result">🎯 El porcentaje del tercer descuento debe ser del **12.5%**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-file-ruled"></i>
+                                <h5 class="m-0">Ejercicio 2 — Puntuación Faltante para un Promedio Meta</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un estudiante necesita obtener una calificación final del **85%**
+                                    en un curso. El examen final vale el **60%** de la nota total, y los trabajos
+                                    previos valen el **40%**. Si en los trabajos previos ya obtuvo un **80%**, ¿qué
+                                    **calificación mínima** debe obtener en el examen final para alcanzar la meta del
+                                    85%?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Meta Total</th>
+                                            <td>85%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Peso Examen Final (X)</th>
+                                            <td>60%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Nota Trabajos Previos</th>
+                                            <td>80% (Peso 40%)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-pencil-square"></i><strong>Paso 1:</strong> Establecer
+                                    la ecuación de la media ponderada (donde X es la nota del final).
+                                    <code>0.85 = (0.40 × 0.80) + (0.60 × X)</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Despejar la
+                                    variable X.
+                                    <code>0.85 = 0.32 + 0.60X</code>
+                                    <code>0.53 = 0.60X</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-check2-square"></i><strong>Paso 3:</strong> Calcular
+                                    el valor de X y convertir a porcentaje.
+                                    <code>X = 0.53 / 0.60 ≈ 0.8833</code>
+                                </div>
+
+                                <div class="result">🎓 Debe obtener una nota mínima de **88.33%** en el examen final.
+                                </div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-activity"></i>
+                                <h5 class="m-0">Ejercicio 3 — Hallar el Valor Inicial con Variación Conocida</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">El precio de una materia prima **aumentó** un **40%** en el último
+                                    trimestre. Se sabe que el precio actual (Valor Final) es de **S/280** por unidad.
+                                    ¿Cuál era el **precio original** (Valor Inicial) de la materia prima antes del
+                                    aumento?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Valor Final ($V_f$)</th>
+                                            <td>S/280</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Variación</th>
+                                            <td>+40%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Valor Inicial ($V_i$)</th>
+                                            <td>Incógnita (X)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 1:</strong> Determinar el
+                                    factor de multiplicación del aumento.
+                                    <code>1 + 0.40 = 1.40</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Establecer la
+                                    relación para despejar el valor inicial ($V_i$).
+                                    <code>Vf = Vi × Factor</code>
+                                    <code>280 = Vi × 1.40</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-arrow-counterclockwise"></i><strong>Paso 3:</strong>
+                                    Calcular el valor inicial.
+                                    <code>Vi = 280 / 1.40 = 200</code>
+                                </div>
+
+                                <div class="result">🏭 El precio original de la materia prima era de **S/200**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-truck-flatbed"></i>
+                                <h5 class="m-0">Ejercicio 4 — Deshacer la Ganancia para Recuperar el Costo</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un vendedor fijó el precio de un producto aplicando una ganancia
+                                    del **50%** sobre su costo original. Si no logra venderlo a ese precio, ¿qué
+                                    **porcentaje de descuento** debe aplicar al precio de venta actual para que el
+                                    precio final sea exactamente igual al **costo original**?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Ganancia sobre Costo</th>
+                                            <td>50% (Factor 1.50)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Costo Original ($C$)</th>
+                                            <td>Asumir 100 (o 1)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Precio de Venta ($V$)</th>
+                                            <td>150 (o 1.5)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-dash-circle"></i><strong>Paso 1:</strong> Determinar
+                                    el monto de la reducción (la ganancia a eliminar).
+                                    <code>Monto a Reducir = Venta - Costo = 150 - 100 = 50</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 2:</strong> Calcular la
+                                    reducción como porcentaje del **Precio de Venta** (la nueva base).
+                                    <code>Descuento % = (Monto a Reducir / Precio de Venta) × 100</code>
+                                    <code>= (50 / 150) × 100 ≈ 33.33%</code>
+                                </div>
+
+                                <div class="result">📉 El vendedor debe aplicar un descuento del **33.33%** sobre el
+                                    precio actual.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-clock-history"></i>
+                                <h5 class="m-0">Ejercicio 5 — Años para Duplicar una Inversión</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Una inversión inicial de **S/10,000** crece a una tasa compuesta
+                                    anual fija del **7%**. ¿Cuántos **años** tomará aproximadamente para que la
+                                    inversión se **duplique** (alcanzar S/20,000)? (Nota: Este cálculo requiere
+                                    logaritmos, pero se puede estimar usando la Regla del 72 o por iteración).</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Capital Inicial ($C_i$)</th>
+                                            <td>S/10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Capital Final ($C_f$)</th>
+                                            <td>S/20,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tasa de Crecimiento</th>
+                                            <td>7% (Factor 1.07)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-graph-up"></i><strong>Paso 1:</strong> Determinar el
+                                    factor de crecimiento total necesario.
+                                    <code>Factor = Cf / Ci = 20000 / 10000 = 2</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Usar la Regla
+                                    del 72 para una estimación rápida: $72 / \%$.
+                                    <code>Años ≈ 72 / 7 ≈ 10.28 años</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-journal-text"></i><strong>Paso 3:</strong> Usar la
+                                    fórmula de Interés Compuesto ($C_f = C_i \times (1+r)^t$) y logaritmos (o iteración)
+                                    para el valor exacto:
+                                    <code>$2 = (1.07)^t$ $\rightarrow$ $t = \log_{1.07}(2) \approx 10.24$ años</code>
+                                </div>
+
+                                <div class="result">⏳ Tomará aproximadamente **10.24 años** duplicar la inversión.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-rulers"></i>
+                                <h5 class="m-0">Ejercicio 6 — Error Acumulado en el Cálculo de Área</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un ingeniero mide el lado de un terreno cuadrado y comete un
+                                    error, midiendo un **3% menos** de lo que mide realmente. Si usa esta medida
+                                    incorrecta para calcular el área del terreno, ¿cuál será el **porcentaje de error**
+                                    en el cálculo del área?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Error en el Lado ($L$)</th>
+                                            <td>-3% (Factor 0.97)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Área Real ($L^2$)</th>
+                                            <td>Asumir $100^2 = 10,000$ (o $1^2 = 1$)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-square"></i><strong>Paso 1:</strong> Determinar el
+                                    factor de área del error.
+                                    <code>Factor de Área = (Factor del Lado)² = (0.97)² = 0.9409</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-arrow-down-left"></i><strong>Paso 2:</strong> Calcular
+                                    el área medida respecto al área real (100%).
+                                    <code>Área Medida = 100% × 0.9409 = 94.09%</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Determinar el
+                                    porcentaje de error por defecto.
+                                    <code>Error = 100% - 94.09% = 5.91%</code>
+                                </div>
+
+                                <div class="result">❌ El porcentaje de error en el cálculo del área será del **5.91%**
+                                    por defecto.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-x-diamond"></i>
+                                <h5 class="m-0">Ejercicio 7 — Cantidad de Muestra para Alcanzar el 50%</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">En un evento hay **300 hombres** y **200 mujeres**. Para que el
+                                    porcentaje de mujeres sea del **50%** del total de asistentes, ¿cuántas **mujeres
+                                    adicionales** deben ingresar al evento? (El número de hombres no cambia).</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Hombres (Fijo)</th>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Mujeres Iniciales</th>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Meta Mujeres</th>
+                                            <td>50% del Total</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-box-fill"></i><strong>Paso 1:</strong> Si las mujeres
+                                    son el 50% (Meta), los hombres (300) deben ser el otro 50% del total.
+                                    <code>300 Hombres = 50% del Total</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-person-fill-gear"></i><strong>Paso 2:</strong> Usar la
+                                    parte conocida (Hombres) y la meta de porcentaje (50%) para hallar el Total Final.
+                                    <code>Total Final = (300 / 0.50) = 600 asistentes</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-plus-lg"></i><strong>Paso 3:</strong> Calcular el
+                                    número final de mujeres y la diferencia necesaria.
+                                    <code>Mujeres Finales = 600 - 300 = 300</code>
+                                    <code>Mujeres Adicionales = 300 - 200 = 100</code>
+                                </div>
+
+                                <div class="result">🚺 Deben ingresar **100 mujeres adicionales**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-arrow-repeat"></i>
+                                <h5 class="m-0">Ejercicio 8 — Hallar la Tasa de Crecimiento Anual</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">La facturación anual de una empresa pasó de **S/500,000** a
+                                    **S/605,000** en un período de **dos años**. Si el crecimiento fue constante y
+                                    compuesto anualmente, ¿cuál fue la **tasa de crecimiento anual** (r%)?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Inicial ($C_i$)</th>
+                                            <td>S/500,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Final ($C_f$)</th>
+                                            <td>S/605,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tiempo ($t$)</th>
+                                            <td>2 años</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-square-root"></i><strong>Paso 1:</strong> Establecer
+                                    la fórmula de crecimiento y despejar $(1+r)$.
+                                    <code>$C_f = C_i \times (1+r)^2$ $\rightarrow$ $(1+r)^2 = C_f / C_i$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Sustituir
+                                    valores y aplicar raíz cuadrada.
+                                    <code>$(1+r)^2 = 605000 / 500000 = 1.21$</code>
+                                    <code>$1+r = \sqrt{1.21} = 1.10$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Despejar la tasa
+                                    ($r$) y convertir a porcentaje.
+                                    <code>$r = 1.10 - 1 = 0.10$</code>
+                                </div>
+
+                                <div class="result">📊 La tasa de crecimiento anual fue del **10%**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-radioactive"></i>
+                                <h5 class="m-0">Ejercicio 9 — Decaimiento de Material Radiactivo</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un laboratorio tiene una muestra de **500 gramos** de un isótopo
+                                    radiactivo. Si este material decae a una tasa constante del **5% anual**, ¿cuántos
+                                    **años** tomará aproximadamente para que la muestra se reduzca a la mitad de su masa
+                                    inicial (**250 gramos**)?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Masa Inicial ($M_i$)</th>
+                                            <td>500 gramos</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Masa Final ($M_f$)</th>
+                                            <td>250 gramos</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tasa de Decaimiento</th>
+                                            <td>5% anual (Factor 0.95)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-graph-down"></i><strong>Paso 1:</strong> Determinar el
+                                    factor de reducción total necesario.
+                                    <code>Factor = Mf / Mi = 250 / 500 = 0.5</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-journal-text"></i><strong>Paso 2:</strong> Usar la
+                                    fórmula de decaimiento ($M_f = M_i \times (1-r)^t$) y logaritmos (o iteración) para
+                                    el tiempo ($t$):
+                                    <code>$0.5 = (0.95)^t$ $\rightarrow$ $t = \log_{0.95}(0.5)$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 3:</strong> Calcular el
+                                    valor del tiempo.
+                                    <code>$t \approx 13.51$ años</code>
+                                </div>
+
+                                <div class="result">☢️ Tomará aproximadamente **13.51 años** reducir la masa a la mitad.
+                                </div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-box-seam"></i>
+                                <h5 class="m-m0">Ejercicio 10 — Error Cúbico en la Medición de Volumen</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">El volumen de una caja cúbica se calculó incorrectamente,
+                                    resultando un volumen medido que es **11.45% menor** que el volumen real. Si el
+                                    error fue solo en la medición del **lado** del cubo (error unidimensional), ¿cuál
+                                    fue el **porcentaje de error** en la medición de ese lado?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Error en el Volumen</th>
+                                            <td>-11.45%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Volumen Medido (Factor)</th>
+                                            <td>$1 - 0.1145 = 0.8855$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-square-fill"></i><strong>Paso 1:</strong> Determinar
+                                    el factor de error del Volumen.
+                                    <code>$V_{\text{medido}} / V_{\text{real}} = 0.8855$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Usar la
+                                    relación $V = L^3$ y despejar el factor del lado (aplicar raíz cúbica).
+                                    <code>Factor del Lado ($L_{\text{factor}}$) = $\sqrt[3]{0.8855} \approx 0.9599$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Convertir el
+                                    factor del lado a porcentaje de error.
+                                    <code>$1 - 0.9599 = 0.0401$</code>
+                                </div>
+
+                                <div class="result">📏 El porcentaje de error en la medición del lado fue del **4.01%**
+                                    (por defecto).</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-patch-question"></i>
+                                <h5 class="m-0">Ejercicio 11 — Tasa de Recargo Logístico Anual</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">El costo de transporte de un producto subió de **$4.50** por
+                                    unidad a **$5.832** por unidad en un período de **tres años**. Si el recargo
+                                    logístico fue un porcentaje anual **constante** sobre el costo del año anterior,
+                                    ¿cuál fue la **tasa de recargo anual** (r%)?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Costo Inicial ($C_i$)</th>
+                                            <td>$4.50</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Costo Final ($C_f$)</th>
+                                            <td>$5.832</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tiempo ($t$)</th>
+                                            <td>3 años</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Establecer la
+                                    fórmula de crecimiento y despejar $(1+r)$.
+                                    <code>$C_f = C_i \times (1+r)^3$ $\rightarrow$ $(1+r)^3 = C_f / C_i$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Sustituir
+                                    valores y aplicar raíz cúbica.
+                                    <code>$(1+r)^3 = 5.832 / 4.50 = 1.296$</code>
+                                    <code>$1+r = \sqrt[3]{1.296} = 1.09$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Despejar la tasa
+                                    ($r$) y convertir a porcentaje.
+                                    <code>$r = 1.09 - 1 = 0.09$</code>
+                                </div>
+
+                                <div class="result">🚚 La tasa de recargo logístico anual fue del **9%**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <h5 class="m-0">Ejercicio 12 — Variación Neta de dos Transacciones</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un inversor compra una acción por **$X**. Al día siguiente, la
+                                    acción sube un **20%**. El tercer día, la acción cae un **20%** respecto al valor
+                                    del segundo día. ¿Cuál es la **variación porcentual neta** del valor de la acción
+                                    desde el precio inicial ($X$)?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Día 1 (Inicial)</th>
+                                            <td>$X$ (Asumir 100)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Día 2 (Aumento)</th>
+                                            <td>+20% (Factor 1.20)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Día 3 (Caída)</th>
+                                            <td>-20% (Factor 0.80)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 1:</strong>
+                                    Determinar el factor de variación neta (multiplicar los factores).
+                                    <code>Factor Neto = 1.20 × 0.80 = 0.96</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Paso 2:</strong> Calcular el
+                                    valor final (asumiendo 100).
+                                    <code>Valor Final = 100 × 0.96 = 96</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Calcular la
+                                    variación porcentual neta.
+                                    <code>Variación = (Final / Inicial) - 1 = (96 / 100) - 1 = -0.04</code>
+                                </div>
+
+                                <div class="result">📉 La variación porcentual neta es una pérdida del **4%**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-piggy-bank"></i>
+                                <h5 class="m-0">Ejercicio 13 — Determinar Costo para Ganar un 25%</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un minorista vende un producto a **S/400**. Sabiendo que, al
+                                    venderlo a ese precio, obtiene una ganancia del **25%** sobre el **costo original**
+                                    ($C$). ¿Cuál fue el **costo original** de ese producto?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Precio de Venta ($V$)</th>
+                                            <td>S/400</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ganancia sobre Costo</th>
+                                            <td>25%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Costo Original ($C$)</th>
+                                            <td>Incógnita (X)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-currency-exchange"></i><strong>Paso 1:</strong>
+                                    Establecer la relación: Precio de Venta es igual al Costo más la Ganancia sobre el
+                                    Costo.
+                                    <code>Venta = Costo × (1 + Ganancia %)</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Sustituir los
+                                    valores y despejar el Costo.
+                                    <code>$400 = C \times (1 + 0.25)$</code>
+                                    <code>$400 = C \times 1.25$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 3:</strong> Calcular el
+                                    Costo Original.
+                                    <code>$C = 400 / 1.25 = 320$</code>
+                                </div>
+
+                                <div class="result">💸 El costo original del producto fue de **S/320**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-bar-chart-line"></i>
+                                <h5 class="m-0">Ejercicio 14 — Crecimiento Compuesto con Tasas Variables</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un indicador económico comenzó en **100 puntos** ($P_i$). El
+                                    primer año creció un **10%**. El segundo año cayó un **5%** (sobre el valor del
+                                    primer año). El tercer año creció un **15%** (sobre el valor del segundo año). ¿Cuál
+                                    es el valor del indicador al final del **tercer año**?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Punto de Partida</th>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Año 1</th>
+                                            <td>+10% (Factor 1.10)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Año 2</th>
+                                            <td>-5% (Factor 0.95)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Año 3</th>
+                                            <td>+15% (Factor 1.15)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-currency-dollar"></i><strong>Paso 1:</strong>
+                                    Determinar el factor de variación neta acumulado (multiplicar los factores).
+                                    <code>Factor Neto = 1.10 × 0.95 × 1.15</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Calcular el
+                                    Factor Neto.
+                                    <code>Factor Neto = 1.045 × 1.15 = 1.20175</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 3:</strong> Aplicar
+                                    el Factor Neto al valor inicial.
+                                    <code>Valor Final = 100 × 1.20175 = 120.175</code>
+                                </div>
+
+                                <div class="result">📊 El valor del indicador al final del tercer año es de **120.175
+                                    puntos**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-droplet-half"></i>
+                                <h5 class="m-0">Ejercicio 15 — Hallar la Concentración Inicial de una Solución</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Se tienen **20 litros** de un jarabe con una concentración de
+                                    azúcar desconocida ($X\%$). Al añadir **5 litros** de agua pura (0% azúcar), la
+                                    concentración final se reduce al **16%**. ¿Cuál era la **concentración inicial
+                                    ($X\%$)** del jarabe?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Volumen Inicial ($V_i$)</th>
+                                            <td>20 litros</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Volumen Añadido (Agua)</th>
+                                            <td>5 litros</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Concentración Final ($C_f$)</th>
+                                            <td>16%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-box"></i><strong>Paso 1:</strong> Determinar el
+                                    Volumen Total Final.
+                                    <code>$V_f = 20 + 5 = 25$ litros</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Usar la
+                                    Concentración Final para hallar la cantidad de azúcar (Parte Fija).
+                                    <code>Azúcar = $V_f \times C_f = 25 \times 0.16 = 4$ litros</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> El azúcar
+                                    inicial (4 litros) es una proporción de la concentración inicial ($X\%$) del volumen
+                                    inicial ($V_i$).
+                                    <code>$C_i = \text{Azúcar} / V_i = 4 / 20 = 0.20$</code>
+                                </div>
+
+                                <div class="result">🧪 La concentración inicial del jarabe era del **20%**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-currency-dollar"></i>
+                                <h5 class="m-0">Ejercicio 16 — Porcentaje de Ganancia Sobre Venta</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Una empresa determina sus precios de venta aplicando una ganancia
+                                    del **40%** sobre el **costo original** ($C$). Si un producto tiene un costo de
+                                    **S/100**, ¿qué **porcentaje de ganancia** representa ese beneficio sobre el
+                                    **precio de venta** final?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Costo Original ($C$)</th>
+                                            <td>S/100</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ganancia sobre Costo</th>
+                                            <td>40%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Incógnita</th>
+                                            <td>% Ganancia sobre Venta</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-tags"></i><strong>Paso 1:</strong> Calcular el Precio
+                                    de Venta y la Ganancia Bruta.
+                                    <code>Venta = 100 × (1 + 0.40) = S/140</code>
+                                    <code>Ganancia Bruta = 140 - 100 = S/40</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 2:</strong> Calcular el
+                                    porcentaje de ganancia respecto al **Precio de Venta** (la nueva base).
+                                    <code>% Ganancia sobre Venta = (Ganancia / Venta) × 100</code>
+                                    <code>= (40 / 140) × 100 ≈ 28.57%</code>
+                                </div>
+
+                                <div class="result">💰 La ganancia representa un **28.57%** sobre el precio de venta.
+                                </div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-person-workspace"></i>
+                                <h5 class="m-0">Ejercicio 17 — Variación de Tiempo con Cambio de Personal</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un equipo de **10 programadores** puede completar un proyecto en
+                                    **20 días**. Si la empresa necesita completar el proyecto un **25% más rápido**, y
+                                    se sabe que la productividad de cada nuevo programador es **20% menor** que la de
+                                    los originales, ¿cuántos **programadores adicionales** deben ser contratados?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Iniciales ($P_i$)</th>
+                                            <td>10 programadores</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tiempo Inicial ($T_i$)</th>
+                                            <td>20 días</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tiempo Meta ($T_f$)</th>
+                                            <td>-25% (15 días)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-clock"></i><strong>Paso 1:</strong> Calcular el tiempo
+                                    meta y el total de "unidades de trabajo" requeridas.
+                                    <code>Tiempo Meta: 20 × (1 - 0.25) = 15 días</code>
+                                    <code>Trabajo Total (Inicial): 10 prog. × 20 días = 200 unidades</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-cpu"></i><strong>Paso 2:</strong> Calcular la
+                                    productividad relativa de los nuevos programadores.
+                                    <code>Productividad Nueva: 1 - 0.20 = 0.8 unidades/día</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-people"></i><strong>Paso 3:</strong> Hallar el total
+                                    de personal equivalente necesario para 15 días.
+                                    <code>Total Necesario = 200 unidades / 15 días ≈ 13.33 programadores</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-person-fill-add"></i><strong>Paso 4:</strong>
+                                    Determinar los nuevos programadores necesarios, considerando su menor productividad.
+                                    <code>Prog. Adic. Necesarios = (Total Necesario - 10) / 0.8 ≈ (13.33 - 10) / 0.8 = 4.16</code>
+                                </div>
+
+                                <div class="result">👥 Deben contratarse **5 programadores adicionales** (redondeando al
+                                    entero superior).</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-currency-exchange"></i>
+                                <h5 class="m-0">Ejercicio 19 — Costo Original para Venta Neutral</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Un inversor vende dos cuadros por **S/4,000 cada uno**,
+                                    totalizando S/8,000 en ventas. En el **primer cuadro**, obtuvo una ganancia del
+                                    **25%** sobre el costo. Para que la **ganancia neta** total de ambas ventas sea
+                                    exactamente **0** (no haya ganancia ni pérdida global), ¿cuál debe haber sido el
+                                    **costo original** del segundo cuadro?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Venta de Cada Cuadro</th>
+                                            <td>S/4,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ganancia Neta Total</th>
+                                            <td>S/0</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ganancia Cuadro 1 (sobre Costo)</th>
+                                            <td>+25%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 1:</strong> Calcular el
+                                    Costo del Cuadro 1 (Despeje $C_1$).
+                                    <code>$4000 = C_1 \times 1.25$ $\rightarrow$ $C_1 = 4000 / 1.25 = 3,200$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-dash-circle"></i><strong>Paso 2:</strong> Calcular la
+                                    Ganancia/Pérdida del Cuadro 1.
+                                    <code>Ganancia 1 = $4000 - 3200 = 800$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-arrow-down-up"></i><strong>Paso 3:</strong> Para
+                                    Ganancia Neta S/0, la Ganancia 2 debe anular la Ganancia 1.
+                                    <code>Pérdida 2 = Ganancia 1 = 800$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-box"></i><strong>Paso 4:</strong> Hallar el Costo del
+                                    Cuadro 2 (Venta + Pérdida).
+                                    <code>Costo 2 = $4000 + 800 = 4,800$</code>
+                                </div>
+
+                                <div class="result">🖼️ El costo original del segundo cuadro debió ser **S/4,800**.
+                                </div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-layers-half"></i>
+                                <h5 class="m-0">Ejercicio 19 — Porcentaje de un Subgrupo respecto al Resto</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">En una fábrica hay 400 empleados. El **40%** son técnicos y el
+                                    **60%** son operarios. Si el **15%** de los técnicos son mujeres, y el **10%** de
+                                    los operarios son mujeres, ¿qué **porcentaje de todos los empleados hombres**
+                                    representan las **mujeres operarias**?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Total Empleados</th>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <th>% Hombres (Total)</th>
+                                            <td>Incógnita (Nueva Base)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Mujeres Operarias</th>
+                                            <td>Incógnita (Parte)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-person-fill"></i><strong>Paso 1:</strong> Calcular
+                                    Hombres y Mujeres.
+                                    <code>Técnicos (40% de 400): 160</code>; Mujeres Técnicas: $160 \times 0.15 = 24$
+                                    <code>Operarios (60% de 400): 240</code>; **Mujeres Operarias**: $240 \times 0.10 =
+                                    24$
+                                </div>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Calcular el
+                                    total de Hombres (Nueva Base).
+                                    <code>Mujeres Totales: $24 + 24 = 48$</code>
+                                    <code>Hombres Totales: $400 - 48 = 352$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Calcular el
+                                    porcentaje de Mujeres Operarias (24) sobre el Total de Hombres (352).
+                                    <code>% = (Mujeres Operarias / Hombres Totales) × 100</code>
+                                    <code>% = (24 / 352) × 100 ≈ 6.82%</code>
+                                </div>
+
+                                <div class="result">👥 Las mujeres operarias representan el **6.82%** del total de
+                                    hombres.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="exercise-card">
+                            <div class="exercise-header d-flex align-items-center">
+                                <i class="bi bi-calendar-range"></i>
+                                <h5 class="m-0">Ejercicio 20 — Período con Tasa Constante</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">Una población de insectos crece a una tasa constante de **20% cada
+                                    mes**. Si la población pasó de **500 a 720** en $X$ meses. ¿Cuál es la **duración de
+                                    ese período ($X$ meses)**?</p>
+                                <table class="table table-sm table-borderless mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th>Inicial ($P_i$)</th>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Final ($P_f$)</th>
+                                            <td>720</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Tasa Mensual</th>
+                                            <td>+20% (Factor 1.20)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Establecer la
+                                    fórmula de crecimiento y despejar el factor de crecimiento total.
+                                    <code>$P_f = P_i \times (1.20)^X$ $\rightarrow$ $(1.20)^X = P_f / P_i$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 2:</strong> Sustituir
+                                    los valores y simplificar.
+                                    <code>$(1.20)^X = 720 / 500 = 1.44$</code>
+                                </div>
+
+                                <div class="step"><i class="bi bi-clock-history"></i><strong>Paso 3:</strong> Resolver
+                                    la ecuación exponencialmente (o por inspección).
+                                    <code>$1.20^1 = 1.20$; $1.20^2 = 1.44$</code>
+                                    <code>$X = 2$</code>
+                                </div>
+
+                                <div class="result">⏳ La duración del período fue de **2 meses**.</div>
+
+                                <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
+                                        class="bi bi-calculator"></i> Ver esta
+                                    calculadora</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Sección de Calculadoras -->
+    <section class="container py-5 text-center">
+        <footer class="container text-center">
+            <p>💡 Aprende con ejemplos de la vida real y practica con nuestras calculadoras interactivas.</p>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
