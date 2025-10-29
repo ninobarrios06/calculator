@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-item nav-link" href="/calculator/index.html#calculators">Calculators</a>
+            <a class="nav-item nav-link" href="/calculator/index.html">Calculators</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="/calculator/theory.html">Theory</a>
@@ -47,9 +47,9 @@
                             Exercices
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Facil</a></li>
-                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermedio</a></li>
-                            <li><a class="dropdown-item" href="/calculator/exercisesHard.html">Avanzado</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Easy</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesAdvanced.html">Advanced</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -62,105 +62,194 @@
     <main>
 
         <div class="container">
+            <section id="tips-porcentajes" class="mt-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Tips for Solving Percentage Problems
+                    </h2>
+                    <p class="text-center text-muted mb-5">
+                        Learn to handle percentages with these practical tips that will help you solve any
+                        exercise quickly and confidently.
+                    </p>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-calculator display-5 textgreen mb-3"></i>
+                                    <h5>Use the Base Formula</h5>
+                                    <p class="text-muted">Remember that the percentage of a quantity is calculated as:
+                                        <code>(percentage × quantity) / 100</code>.
+                                        This is the foundation for all problems of this type.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-graph-up display-5 textgreen mb-3"></i>
+                                    <h5>Identify if it's an Increase or a Decrease (Discount)</h5>
+                                    <p class="text-muted">If the value grows (interest, bonus, taxes), the
+                                        percentage is added.
+                                        If it decreases (sales, losses, discounts), the percentage is subtracted.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-percent display-5 textgreen mb-3"></i>
+                                    <h5>Convert Percentages to Decimals</h5>
+                                    <p class="text-muted">It is sometimes easier to work with decimals:
+                                        25% = 0.25, 10% = 0.10, 8% = 0.08.
+                                        Multiply the number by the decimal to get the result.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-arrow-repeat display-5 textgreen mb-3"></i>
+                                    <h5>Check Your Calculations</h5>
+                                    <p class="text-muted">Always verify your steps:
+                                        First, calculate the percentage, then add or subtract depending on the type of
+                                        problem.
+                                        A small error can change the entire result.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-stopwatch display-5 textgreen mb-3"></i>
+                                    <h5>Practice with Real-Life Situations</h5>
+                                    <p class="text-muted">Apply percentages in your daily life:
+                                        store discounts, taxes, tips, yields, etc.
+                                        This will reinforce your understanding practically.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-journal-check display-5 textgreen mb-3"></i>
+                                    <h5>Use a Calculator if Needed</h5>
+                                    <p class="text-muted">Don't hesitate to use a calculator to confirm your math.
+                                        Accuracy is important, especially in financial or
+                                        scientific contexts.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
             <header class="text-center my-5">
-                <h1>Ejercicios Nivel Fáciles de Porcentajes</h1>
+                <h1>Easy Level Percentage Exercises</h1>
                 <p class="subtitle">
-                    Aprende a calcular porcentajes paso a paso con ejemplos básicos y casos reales del mundo cotidiano.
+                    Learn to calculate percentages step by step with basic examples and real-world cases.
                 </p>
             </header>
             <section id="excercisesEasy">
                 <div class="row g-4">
-                    <!-- ======= EJERCICIO 1 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-percent"></i>
-                                <h5 class="m-0">Ejercicio 1 — ¿Cuál es el 25% de S/200?</h5>
+                                <h5 class="m-0">Exercise 1 — What is 25% of S/200?</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Queremos calcular cuánto representa el 25% de un valor total de
-                                    S/200.
+                                <p class="text-muted">We want to calculate how much 25% of a total value of S/200
+                                    represents.
                                 </p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Valor total</th>
+                                            <th>Total Value</th>
                                             <td>S/200</td>
                                         </tr>
                                         <tr>
-                                            <th>Porcentaje</th>
+                                            <th>Percentage</th>
                                             <td>25%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Planteamos la
-                                    proporción: 100% → S/200; 25% → x</div>
-                                <div class="step"><i class="bi bi-lightbulb"></i><strong>Paso 2:</strong> Aplicamos la
-                                    regla
-                                    de
-                                    tres: <code>x = (25 × 200) / 100</code></div>
-                                <div class="step"><i class="bi bi-check-circle"></i><strong>Paso 3:</strong> Resultado:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 1:</strong> Set up the
+                                    proportion: 100% → S/200; 25% → x</div>
+                                <div class="step"><i class="bi bi-lightbulb"></i><strong>Step 2:</strong> Apply the rule
+                                    of three: <code>x = (25 × 200) / 100</code></div>
+                                <div class="step"><i class="bi bi-check-circle"></i><strong>Step 3:</strong> Result:
                                     <code>x = S/50</code>
                                 </div>
-                                <div class="result">✅ El 25% de S/200 es <strong>S/50</strong>.</div>
+                                <div class="result">✅ 25% of S/200 is <strong>S/50</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3">
-                                    <i class="bi bi-calculator"></i> Ver esta calculadora
+                                    <i class="bi bi-calculator"></i> See this calculator
                                 </a>
 
                             </div>
                         </div>
                     </div>
 
-                    <!-- ======= EJERCICIO 2 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-cart-check"></i>
-                                <h5 class="m-0">Ejercicio 2 — Descuento del 30% sobre S/150</h5>
+                                <h5 class="m-0">Exercise 2 — 30% Discount on S/150</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Queremos calcular el precio final después de aplicar un 30% de
-                                    descuento.
+                                <p class="text-muted">We want to calculate the final price after applying a 30%
+                                    discount.
                                 </p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio original</th>
+                                            <th>Original Price</th>
                                             <td>S/150</td>
                                         </tr>
                                         <tr>
-                                            <th>Descuento</th>
+                                            <th>Discount</th>
                                             <td>30%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Descuento:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 1:</strong> Discount:
                                     <code>x = (30 × 150) / 100 = S/45</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 2:</strong> Precio final:
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 2:</strong> Final Price:
                                     <code>150 − 45 = S/105</code>
                                 </div>
-                                <div class="result">💰 Precio final con descuento: <strong>S/105</strong>.</div>
+                                <div class="result">💰 Final price with discount: <strong>S/105</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ======= EJERCICIO 3 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-bar-chart-line"></i>
-                                <h5 class="m-0">Ejercicio 3 — ¿Qué porcentaje es 18 de 20?</h5>
+                                <h5 class="m-0">Exercise 3 — What percentage is 18 of 20?</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Calcula el porcentaje que representa 18 de un total de 20.</p>
+                                <p class="text-muted">Calculate the percentage that 18 represents out of a total of 20.
+                                </p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Parte</th>
+                                            <th>Part</th>
                                             <td>18</td>
                                         </tr>
                                         <tr>
@@ -169,772 +258,653 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-lightbulb"></i><strong>Paso 1:</strong> Fórmula:
+                                <div class="step"><i class="bi bi-lightbulb"></i><strong>Step 1:</strong> Formula:
                                     <code>x = (18 × 100) / 20</code>
                                 </div>
-                                <div class="step"><i class="bi bi-check-circle"></i><strong>Paso 2:</strong> Resultado:
+                                <div class="step"><i class="bi bi-check-circle"></i><strong>Step 2:</strong> Result:
                                     <code>x = 90%</code>
                                 </div>
-                                <div class="result">📊 18 de 20 equivale al <strong>90%</strong>.</div>
+                                <div class="result">📊 18 out of 20 is equivalent to <strong>90%</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ======= EJERCICIO 4 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-briefcase"></i>
-                                <h5 class="m-0">Ejercicio 4 — Aumento de sueldo del 10%</h5>
+                                <h5 class="m-0">Exercise 4 — 10% Salary Increase</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un trabajador gana S/2,500 y recibe un aumento del 10%. ¿Cuál será
-                                    su
-                                    nuevo sueldo?</p>
+                                <p class="text-muted">A worker earns S/2,500 and receives a 10% increase. What will be
+                                    their new salary?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Sueldo actual</th>
+                                            <th>Current Salary</th>
                                             <td>S/2,500</td>
                                         </tr>
                                         <tr>
-                                            <th>Aumento</th>
+                                            <th>Increase</th>
                                             <td>10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Aumento:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 1:</strong> Increase:
                                     <code>(10 × 2500) / 100 = S/250</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Paso 2:</strong> Nuevo sueldo:
+                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Step 2:</strong> New Salary:
                                     <code>2500 + 250 = S/2750</code>
                                 </div>
-                                <div class="result">💼 Nuevo sueldo: <strong>S/2,750</strong>.</div>
+                                <div class="result">💼 New salary: <strong>S/2,750</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ======= EJERCICIO 5 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-heart-pulse"></i>
-                                <h5 class="m-0">Ejercicio 5 — Porcentaje de grasa corporal</h5>
+                                <h5 class="m-0">Exercise 5 — Body Fat Percentage</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un deportista tiene 18 kg de grasa corporal y pesa 80 kg. ¿Qué
-                                    porcentaje
-                                    de su peso es grasa?</p>
+                                <p class="text-muted">An athlete has 18 kg of body fat and weighs 80 kg. What percentage
+                                    of their weight is fat?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Peso total</th>
+                                            <th>Total Weight</th>
                                             <td>80 kg</td>
                                         </tr>
                                         <tr>
-                                            <th>Grasa corporal</th>
+                                            <th>Body Fat</th>
                                             <td>18 kg</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> Fórmula:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 1:</strong> Formula:
                                     <code>(18 × 100) / 80 = 22.5%</code>
                                 </div>
-                                <div class="result">🏋️‍♂️ La grasa corporal representa el <strong>22.5%</strong>.</div>
+                                <div class="result">🏋️‍♂️ Body fat represents <strong>22.5%</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ======= EJERCICIO 6 ======= -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-bank"></i>
-                                <h5 class="m-0">Ejercicio 6 — Impuesto del 18% sobre una compra</h5>
+                                <h5 class="m-0">Exercise 6 — 18% Tax on a Purchase (IGV)</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una laptop cuesta S/3,000 y se aplica un IGV del 18%. ¿Cuál será
-                                    el
-                                    precio
-                                    final?</p>
+                                <p class="text-muted">A laptop costs S/3,000 and an 18% sales tax (IGV) is applied. What
+                                    will be
+                                    the final price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio base</th>
+                                            <th>Base Price</th>
                                             <td>S/3,000</td>
                                         </tr>
                                         <tr>
-                                            <th>IGV</th>
+                                            <th>IGV (Sales Tax)</th>
                                             <td>18%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 1:</strong> IGV:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 1:</strong> Calculate
+                                    IGV:
                                     <code>(18 × 3000) / 100 = S/540</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 2:</strong> Precio final:
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 2:</strong> Final Price:
                                     <code>3000 + 540 = S/3,540</code>
                                 </div>
-                                <div class="result">💻 Precio final con IGV incluido: <strong>S/3,540</strong>.</div>
+                                <div class="result">💻 Final price including IGV: <strong>S/3,540</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Ejercicio 7 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-fuel-pump"></i>
-                                <h5 class="m-0">Ejercicio 7 — Aumento del precio de la gasolina en un 12%</h5>
+                                <h5 class="m-0">Exercise 7 — 12% Gas Price Increase</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">El precio de la gasolina era S/6.50 por litro. Si aumenta un 12%,
-                                    ¿cuál
-                                    será el nuevo precio?</p>
+                                <p class="text-muted">The price of gasoline was S/6.50 per liter. If it increases by
+                                    12%,
+                                    what will be the new price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio inicial</th>
+                                            <th>Initial Price</th>
                                             <td>S/6.50</td>
                                         </tr>
                                         <tr>
-                                            <th>Aumento</th>
+                                            <th>Increase</th>
                                             <td>12%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 1:</strong> Calcular el
-                                    aumento:
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 1:</strong> Calculate the
+                                    increase:
                                     <code>(12 × 6.50) / 100 = 0.78</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Paso 2:</strong> Nuevo precio:
+                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Step 2:</strong> New Price:
                                     <code>6.50 + 0.78 = S/7.28</code>
                                 </div>
-                                <div class="result">⛽ El nuevo precio del litro de gasolina será
+                                <div class="result">⛽ The new price per liter of gasoline will be
                                     <strong>S/7.28</strong>.
                                 </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 8 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-house-door"></i>
-                                <h5 class="m-0">Ejercicio 8 — Descuento del 15% en el alquiler</h5>
+                                <h5 class="m-0">Exercise 8 — 15% Discount on Rent</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un departamento cuesta S/1,800 mensuales, pero se aplica un
-                                    descuento
-                                    del
-                                    15% por promoción. ¿Cuánto se pagará al mes?</p>
+                                <p class="text-muted">An apartment costs S/1,800 per month, but a 15% promotional
+                                    discount is applied. How much will be paid monthly?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio original</th>
+                                            <th>Original Price</th>
                                             <td>S/1,800</td>
                                         </tr>
                                         <tr>
-                                            <th>Descuento</th>
+                                            <th>Discount</th>
                                             <td>15%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-arrow-down-circle"></i><strong>Paso 1:</strong>
-                                    Calcular
-                                    el
-                                    descuento:
+                                <div class="step"><i class="bi bi-arrow-down-circle"></i><strong>Step 1:</strong>
+                                    Calculate the discount:
                                     <code>(15 × 1800) / 100 = 270</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash"></i><strong>Paso 2:</strong> Precio con
-                                    descuento:
+                                <div class="step"><i class="bi bi-cash"></i><strong>Step 2:</strong> Discounted Price:
                                     <code>1800 - 270 = S/1,530</code>
                                 </div>
-                                <div class="result">🏠 El precio mensual con descuento es de <strong>S/1,530</strong>.
+                                <div class="result">🏠 The monthly price with discount is <strong>S/1,530</strong>.
                                 </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 9 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-piggy-bank"></i>
-                                <h5 class="m-0">Ejercicio 9 — Ahorro del 25% del sueldo mensual</h5>
+                                <h5 class="m-0">Exercise 9 — 25% Monthly Salary Savings</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Si una persona gana S/2,800 al mes y decide ahorrar el 25% de su
-                                    sueldo,
-                                    ¿cuánto dinero ahorra y cuánto le queda para gastar?</p>
+                                <p class="text-muted">If a person earns S/2,800 per month and decides to save 25% of
+                                    their
+                                    salary, how much money do they save and how much is left to spend?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Sueldo mensual</th>
+                                            <th>Monthly Salary</th>
                                             <td>S/2,800</td>
                                         </tr>
                                         <tr>
-                                            <th>Porcentaje de ahorro</th>
+                                            <th>Savings Percentage</th>
                                             <td>25%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 1:</strong> Calcular ahorro:
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Step 1:</strong> Calculate
+                                    savings:
                                     <code>(25 × 2800) / 100 = 700</code>
                                 </div>
-                                <div class="step"><i class="bi bi-coin"></i><strong>Paso 2:</strong> Dinero restante:
+                                <div class="step"><i class="bi bi-coin"></i><strong>Step 2:</strong> Remaining Money:
                                     <code>2800 - 700 = S/2,100</code>
                                 </div>
-                                <div class="result">🐷 Ahorro mensual: <strong>S/700</strong> | Disponible para gastos:
+                                <div class="result">🐷 Monthly Savings: <strong>S/700</strong> | Available for expenses:
                                     <strong>S/2,100</strong>.
                                 </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Ejercicio 10 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-basket2"></i>
-                                <h5 class="m-0">Ejercicio 10 — Descuento del 30% en una tienda de ropa</h5>
+                                <h5 class="m-0">Exercise 10 — 30% Discount at a Clothing Store</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una chaqueta cuesta S/250 y tiene un descuento del 30%. ¿Cuál es
-                                    el
-                                    precio
-                                    final?</p>
+                                <p class="text-muted">A jacket costs S/250 and has a 30% discount. What is the
+                                    final price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio original</th>
+                                            <th>Original Price</th>
                                             <td>S/250</td>
                                         </tr>
                                         <tr>
-                                            <th>Descuento</th>
+                                            <th>Discount</th>
                                             <td>30%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 1:</strong> Descuento:
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 1:</strong> Discount:
                                     <code>(30 × 250) / 100 = 75</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 2:</strong> Precio final:
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 2:</strong> Final Price:
                                     <code>250 - 75 = S/175</code>
                                 </div>
-                                <div class="result">👕 El precio final de la chaqueta es <strong>S/175</strong>.</div>
+                                <div class="result">👕 The final price of the jacket is <strong>S/175</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> See this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 11 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-credit-card"></i>
-                                <h5 class="m-0">Ejercicio 11 — Interés del 10% en una inversión</h5>
+                                <h5 class="m-0">Exercise 11 — 10% Interest on an Investment</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Inviertes S/5,000 en un fondo que genera un 10% de interés anual.
-                                    ¿Cuánto
-                                    ganarás al final del año?</p>
+                                <p class="text-muted">You invest S/5,000 in a fund that generates a 10% annual interest.
+                                    How much
+                                    will you earn at the end of the year?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Capital inicial</th>
+                                            <th>Initial Capital</th>
                                             <td>S/5,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Interés anual</th>
+                                            <th>Annual Interest</th>
                                             <td>10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-graph-up"></i><strong>Paso 1:</strong> Interés ganado:
+                                <div class="step"><i class="bi bi-graph-up"></i><strong>Step 1:</strong> Interest
+                                    earned:
                                     <code>(10 × 5000) / 100 = 500</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash"></i><strong>Paso 2:</strong> Total final:
+                                <div class="step"><i class="bi bi-cash"></i><strong>Step 2:</strong> Final total:
                                     <code>5000 + 500 = S/5,500</code>
                                 </div>
-                                <div class="result">💰 Ganancia anual: <strong>S/500</strong> | Total:
+                                <div class="result">💰 Annual Gain: <strong>S/500</strong> | Total:
                                     <strong>S/5,500</strong>.
                                 </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 12 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-laptop"></i>
-                                <h5 class="m-0">Ejercicio 12 — Rebaja del 40% en un televisor</h5>
+                                <h5 class="m-0">Exercise 12 — 40% Discount on a Television</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un televisor cuesta S/2,000 y está en oferta con un 40% de
-                                    descuento.
-                                    ¿Cuánto pagas?</p>
+                                <p class="text-muted">A television costs S/2,000 and is on sale with a 40% discount.
+                                    How much do you pay?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio original</th>
+                                            <th>Original Price</th>
                                             <td>S/2,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Descuento</th>
+                                            <th>Discount</th>
                                             <td>40%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-tag"></i><strong>Paso 1:</strong> Descuento:
+                                <div class="step"><i class="bi bi-tag"></i><strong>Step 1:</strong> Discount amount:
                                     <code>(40 × 2000) / 100 = 800</code>
                                 </div>
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 2:</strong> Precio final:
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Step 2:</strong> Final Price:
                                     <code>2000 - 800 = S/1,200</code>
                                 </div>
-                                <div class="result">📺 Precio final del televisor: <strong>S/1,200</strong>.</div>
+                                <div class="result">📺 Final Price of the TV: <strong>S/1,200</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 13 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-receipt"></i>
-                                <h5 class="m-0">Ejercicio 13 — Propina del 10% en un restaurante</h5>
+                                <h5 class="m-0">Exercise 13 — 10% Tip at a Restaurant</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">La cuenta total del restaurante es S/180. Si dejas una propina del
-                                    10%,
-                                    ¿cuánto dejas y cuánto pagas en total?</p>
+                                <p class="text-muted">The total restaurant bill is S/180. If you leave a 10% tip,
+                                    how much do you leave and what is the total amount you pay?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Total del consumo</th>
+                                            <th>Consumption Total</th>
                                             <td>S/180</td>
                                         </tr>
                                         <tr>
-                                            <th>Propina</th>
+                                            <th>Tip</th>
                                             <td>10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 1:</strong> Calcular
-                                    propina:
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 1:</strong> Calculate
+                                    tip:
                                     <code>(10 × 180) / 100 = 18</code>
                                 </div>
-                                <div class="step"><i class="bi bi-receipt-cutoff"></i><strong>Paso 2:</strong> Total a
-                                    pagar:
+                                <div class="step"><i class="bi bi-receipt-cutoff"></i><strong>Step 2:</strong> Total to
+                                    pay:
                                     <code>180 + 18 = S/198</code>
                                 </div>
-                                <div class="result">🍽️ Propina: <strong>S/18</strong> | Total a pagar:
+                                <div class="result">🍽️ Tip: <strong>S/18</strong> | Total to Pay:
                                     <strong>S/198</strong>.
                                 </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 14 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-mortarboard"></i>
-                                <h5 class="m-0">Ejercicio 14 — Calificación final con ponderación</h5>
+                                <h5 class="m-0">Exercise 14 — Final Grade with Weighting</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un alumno obtiene 80% en exámenes (60% del total) y 90% en
-                                    trabajos
+                                <p class="text-muted">A student gets 80% on exams (60% of the total) and 90% on
+                                    assignments
                                     (40%
-                                    del total). ¿Cuál es su nota final?</p>
+                                    of the total). What is their final grade?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Exámenes</th>
-                                            <td>80%</td>
+                                            <th>Exams</th>
+                                            <td>80% (60% weight)</td>
                                         </tr>
                                         <tr>
-                                            <th>Trabajos</th>
-                                            <td>90%</td>
+                                            <th>Assignments</th>
+                                            <td>90% (40% weight)</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-journal-check"></i><strong>Paso 1:</strong> Exámenes:
+                                <div class="step"><i class="bi bi-journal-check"></i><strong>Step 1:</strong> Exams:
                                     <code>(80 × 60) / 100 = 48</code>
                                 </div>
-                                <div class="step"><i class="bi bi-pencil"></i><strong>Paso 2:</strong> Trabajos:
+                                <div class="step"><i class="bi bi-pencil"></i><strong>Step 2:</strong> Assignments:
                                     <code>(90 × 40) / 100 = 36</code>
                                 </div>
-                                <div class="step"><i class="bi bi-clipboard-check"></i><strong>Paso 3:</strong> Nota
-                                    final:
+                                <div class="step"><i class="bi bi-clipboard-check"></i><strong>Step 3:</strong> Final
+                                    Grade:
                                     <code>48 + 36 = 84%</code>
                                 </div>
-                                <div class="result">🎓 Calificación final: <strong>84%</strong>.</div>
+                                <div class="result">🎓 Final Grade: <strong>84%</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 15 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-cart3"></i>
-                                <h5 class="m-0">Ejercicio 15 — Aumento del 25% en ventas mensuales</h5>
+                                <h5 class="m-0">Exercise 15 — 25% Increase in Monthly Sales</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una tienda vendió S/40,000 en enero. En febrero aumentó sus ventas
-                                    un
+                                <p class="text-muted">A store sold S/40,000 in January. In February, its sales increased
+                                    by
                                     25%.
-                                    ¿Cuánto vendió en febrero?</p>
+                                    How much did it sell in February?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Ventas enero</th>
+                                            <th>January Sales</th>
                                             <td>S/40,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Aumento</th>
+                                            <th>Increase</th>
                                             <td>25%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-bar-chart-line"></i><strong>Paso 1:</strong> Aumento:
+                                <div class="step"><i class="bi bi-bar-chart-line"></i><strong>Step 1:</strong> Increase
+                                    amount:
                                     <code>(25 × 40000) / 100 = 10,000</code>
                                 </div>
-                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 2:</strong> Total
-                                    febrero:
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Step 2:</strong> February
+                                    Total:
                                     <code>40000 + 10000 = S/50,000</code>
                                 </div>
-                                <div class="result">🛒 Ventas en febrero: <strong>S/50,000</strong>.</div>
+                                <div class="result">🛒 February Sales: <strong>S/50,000</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 16 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-thermometer-sun"></i>
-                                <h5 class="m-0">Ejercicio 16 — Reducción del 20% en consumo de electricidad</h5>
+                                <h5 class="m-0">Exercise 16 — 20% Reduction in Electricity Consumption</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un hogar pagaba S/180 mensuales de luz y reduce su consumo un 20%.
-                                    ¿Cuánto
-                                    pagará ahora?</p>
+                                <p class="text-muted">A household used to pay S/180 monthly for electricity and reduces
+                                    its consumption by 20%.
+                                    How much
+                                    will they pay now?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Consumo anterior</th>
+                                            <th>Previous Consumption</th>
                                             <td>S/180</td>
                                         </tr>
                                         <tr>
-                                            <th>Reducción</th>
+                                            <th>Reduction</th>
                                             <td>20%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-lightning-charge"></i><strong>Paso 1:</strong>
-                                    Reducción:
+                                <div class="step"><i class="bi bi-lightning-charge"></i><strong>Step 1:</strong>
+                                    Reduction:
                                     <code>(20 × 180) / 100 = 36</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash"></i><strong>Paso 2:</strong> Nuevo pago:
+                                <div class="step"><i class="bi bi-cash"></i><strong>Step 2:</strong> New Payment:
                                     <code>180 - 36 = S/144</code>
                                 </div>
-                                <div class="result">💡 Nuevo pago mensual: <strong>S/144</strong>.</div>
+                                <div class="result">💡 New Monthly Payment: <strong>S/144</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Ejercicio 17 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-airplane"></i>
-                                <h5 class="m-0">Ejercicio 17 — Descuento del 20% en pasajes de avión</h5>
+                                <h5 class="m-0">Exercise 17 — 20% Discount on Airplane Tickets</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un boleto de avión cuesta S/1,200, pero la aerolínea ofrece un 20%
-                                    de
-                                    descuento por compra anticipada. ¿Cuánto pagará el pasajero?</p>
+                                <p class="text-muted">An airplane ticket costs S/1,200, but the airline offers a 20%
+                                    discount for early purchase. How much will the passenger pay?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio original</th>
+                                            <th>Original Price</th>
                                             <td>S/1,200</td>
                                         </tr>
                                         <tr>
-                                            <th>Descuento</th>
+                                            <th>Discount</th>
                                             <td>20%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 1:</strong> Calcular
-                                    descuento:
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 1:</strong> Calculate
+                                    discount:
                                     <code>(20 × 1200) / 100 = 240</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash"></i><strong>Paso 2:</strong> Precio final:
+                                <div class="step"><i class="bi bi-cash"></i><strong>Step 2:</strong> Final Price:
                                     <code>1200 - 240 = S/960</code>
                                 </div>
-                                <div class="result">✈️ El pasajero pagará <strong>S/960</strong> por su boleto.</div>
+                                <div class="result">✈️ The passenger will pay <strong>S/960</strong> for their ticket.
+                                </div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 18 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-heart-pulse"></i>
-                                <h5 class="m-0">Ejercicio 18 — Reducción del 15% en el peso corporal</h5>
+                                <h5 class="m-0">Exercise 18 — 15% Reduction in Body Weight</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una persona pesaba 80 kg y logró reducir su peso en un 15% con
-                                    dieta y
-                                    ejercicio. ¿Cuál es su nuevo peso?</p>
+                                <p class="text-muted">A person weighed 80 kg and managed to reduce their weight by 15%
+                                    with
+                                    diet and
+                                    exercise. What is their new weight?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Peso inicial</th>
+                                            <th>Initial Weight</th>
                                             <td>80 kg</td>
                                         </tr>
                                         <tr>
-                                            <th>Reducción</th>
+                                            <th>Reduction</th>
                                             <td>15%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-activity"></i><strong>Paso 1:</strong> Pérdida de
-                                    peso:
+                                <div class="step"><i class="bi bi-activity"></i><strong>Step 1:</strong> Weight
+                                    Loss:
                                     <code>(15 × 80) / 100 = 12</code>
                                 </div>
-                                <div class="step"><i class="bi bi-person"></i><strong>Paso 2:</strong> Nuevo peso:
+                                <div class="step"><i class="bi bi-person"></i><strong>Step 2:</strong> New Weight:
                                     <code>80 - 12 = 68 kg</code>
                                 </div>
-                                <div class="result">🏋️‍♀️ Peso actual: <strong>68 kg</strong>.</div>
+                                <div class="result">🏋️‍♀️ Current Weight: <strong>68 kg</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 19 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-car-front"></i>
-                                <h5 class="m-0">Ejercicio 19 — Depreciación del 10% anual en un automóvil</h5>
+                                <h5 class="m-0">Exercise 19 — 10% Annual Depreciation on a Car</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un auto nuevo cuesta S/60,000 y se deprecia un 10% cada año. ¿Cuál
-                                    será su
-                                    valor al final del primer año?</p>
+                                <p class="text-muted">A new car costs S/60,000 and depreciates by 10% each year. What
+                                    will its
+                                    value be at the end of the first year?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Valor inicial</th>
+                                            <th>Initial Value</th>
                                             <td>S/60,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Depreciación</th>
+                                            <th>Depreciation</th>
                                             <td>10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-graph-down-arrow"></i><strong>Paso 1:</strong> Pérdida
-                                    de
-                                    valor: <code>(10 × 60000) / 100 = 6,000</code></div>
-                                <div class="step"><i class="bi bi-car-front"></i><strong>Paso 2:</strong> Valor final:
+                                <div class="step"><i class="bi bi-graph-down-arrow"></i><strong>Step 1:</strong> Loss
+                                    in
+                                    Value: <code>(10 × 60000) / 100 = 6,000</code></div>
+                                <div class="step"><i class="bi bi-car-front"></i><strong>Step 2:</strong> Final Value:
                                     <code>60000 - 6000 = S/54,000</code>
                                 </div>
-                                <div class="result">🚗 Valor del auto después de 1 año: <strong>S/54,000</strong>.</div>
+                                <div class="result">🚗 Car Value after 1 year: <strong>S/54,000</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ejercicio 20 -->
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-briefcase"></i>
-                                <h5 class="m-0">Ejercicio 20 — Bonificación del 12% sobre el sueldo</h5>
+                                <h5 class="m-0">Exercise 20 — 12% Bonus on Salary</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un empleado gana S/3,500 mensuales y recibe una bonificación del
-                                    12%.
-                                    ¿Cuánto cobrará en total ese mes?</p>
+                                <p class="text-muted">An employee earns S/3,500 monthly and receives a 12% bonus.
+                                    How much will they collect in total that month?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Sueldo base</th>
+                                            <th>Base Salary</th>
                                             <td>S/3,500</td>
                                         </tr>
                                         <tr>
-                                            <th>Bonificación</th>
+                                            <th>Bonus</th>
                                             <td>12%</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 1:</strong> Calcular
-                                    bonificación:
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 1:</strong> Calculate
+                                    bonus:
                                     <code>(12 × 3500) / 100 = 420</code>
                                 </div>
-                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Paso 2:</strong> Total a
-                                    cobrar:
+                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Step 2:</strong> Total to
+                                    collect:
                                     <code>3500 + 420 = S/3,920</code>
                                 </div>
-                                <div class="result">💼 Total mensual con bonificación: <strong>S/3,920</strong>.</div>
+                                <div class="result">💼 Monthly Total with Bonus: <strong>S/3,920</strong>.</div>
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </section>
-            <section id="tips-porcentajes" class="mt-5">
-                <div class="container">
-                    <h2 class="text-center mb-4"><i class="bi bi-lightbulb"></i> Tips para Resolver Problemas de
-                        Porcentajes
-                    </h2>
-                    <p class="text-center text-muted mb-5">
-                        Aprende a manejar porcentajes con estos consejos prácticos que te ayudarán a resolver cualquier
-                        ejercicio con seguridad y rapidez.
-                    </p>
-
-                    <div class="row g-4">
-
-                        <!-- Tip 1 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-calculator display-5 textgreen mb-3"></i>
-                                    <h5>Usa la fórmula base</h5>
-                                    <p class="text-muted">Recuerda que el porcentaje de una cantidad se calcula como:
-                                        <code>(porcentaje × cantidad) / 100</code>.
-                                        Esta es la base de todos los problemas de este tipo.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tip 2 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-graph-up display-5 textgreen mb-3"></i>
-                                    <h5>Identifica si es aumento o descuento</h5>
-                                    <p class="text-muted">Si el valor crece (intereses, bonificación, impuestos), se
-                                        suma el
-                                        porcentaje.
-                                        Si disminuye (rebajas, pérdidas, descuentos), se resta el porcentaje.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tip 3 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-percent display-5 textgreen mb-3"></i>
-                                    <h5>Convierte porcentajes en decimales</h5>
-                                    <p class="text-muted">A veces es más fácil trabajar con decimales:
-                                        25% = 0.25, 10% = 0.10, 8% = 0.08.
-                                        Multiplica el número por el decimal para obtener el resultado.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tip 4 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-arrow-repeat display-5 textgreen mb-3"></i>
-                                    <h5>Revisa tus operaciones</h5>
-                                    <p class="text-muted">Verifica siempre tus pasos:
-                                        Primero calcula el porcentaje, luego suma o resta según el tipo de problema.
-                                        Un pequeño error puede cambiar todo el resultado.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tip 5 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-stopwatch display-5 textgreen mb-3"></i>
-                                    <h5>Practica con situaciones reales</h5>
-                                    <p class="text-muted">Aplica los porcentajes en tu día a día:
-                                        descuentos en tiendas, impuestos, propinas, rendimiento, etc.
-                                        Esto reforzará tu comprensión de manera práctica.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tip 6 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card tip-card h-100 shadow-sm border-0">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-journal-check display-5 textgreen mb-3"></i>
-                                    <h5>Usa una calculadora si lo necesitas</h5>
-                                    <p class="text-muted">No dudes en usar una calculadora para confirmar tus cálculos.
-                                        La precisión es importante, especialmente en contextos financieros o
-                                        científicos.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            
 
         </div>
     </main>

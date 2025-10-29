@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-item nav-link" href="/calculator/index.html#calculators">Calculators</a>
+            <a class="nav-item nav-link" href="/calculator/index.html">Calculators</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="/calculator/theory.html">Theory</a>
@@ -47,9 +47,9 @@
                             Exercices
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Facil</a></li>
-                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermedio</a></li>
-                            <li><a class="dropdown-item" href="/calculator/exercisesHard.html">Avanzado</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesEasy.html">Easy</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesMedium.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/calculator/exercisesAdvanced.html">Advanced</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -62,11 +62,121 @@
     <main>
 
         <div class="container">
+            <section id="tips-porcentajes-medium" class="mt-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Key Tips for Medium Level Percentage Problems
+                    </h2>
+                    <p class="text-center text-muted mb-5">
+                        Advance to the next level. Master successive operations, weighted calculation, and discount
+                        reversal, essential for more complex problems.
+                    </p>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-x-circle display-5 textgreen mb-3"></i>
+                                    <h5>Multiply Variation Factors</h5>
+                                    <p class="text-muted">
+                                        When you have successive discounts or increases (e.g., -10% and then +5%), DO
+                                        NOT add or subtract them directly. Convert each one to its decimal factor and
+                                        then multiply them all.
+                                        <br>
+                                        Example: -10% is $0.90$. +5% is $1.05$. The total factor is $0.90$ times $1.05$.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-bar-chart-line display-5 textgreen mb-3"></i>
+                                    <h5>Use the Weighted Percentage</h5>
+                                    <p class="text-muted">
+                                        If you have groups of different sizes (e.g., two batches of products with
+                                        different percentages of defects), don't average the percentages. You must
+                                        calculate the total part in each group and divide by the total overall.
+                                        <br>
+                                        The size of the group affects the final result.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-arrow-counterclockwise display-5 textgreen mb-3"></i>
+                                    <h5>Divide to Reverse Operations</h5>
+                                    <p class="text-muted">
+                                        To find the original price before a discount or increase (e.g., a tax) was
+                                        applied, you must divide the final value by the decimal factor. This is key in
+                                        problems where the initial amount is missing.
+                                        <br>
+                                        Example: If a price already includes a 10% VAT, divide the final price by
+                                        $1.10$.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-layers display-5 textgreen mb-3"></i>
+                                    <h5>The Percentage of a Percentage</h5>
+                                    <p class="text-muted">
+                                        To calculate the X% of Y% of a quantity, simply multiply the two percentages
+                                        converted to decimals. There's no need to calculate the first percentage on the
+                                        total and then calculate the second.
+                                        <br>
+                                        Example: 20% of 50% is equivalent to 10% of the total.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-arrow-down-up display-5 textgreen mb-3"></i>
+                                    <h5>Beware of the Comparison Base</h5>
+                                    <p class="text-muted">
+                                        A common mistake is confusing the base. If a value A is 20% greater than B, this
+                                        does not mean that B is 20% less than A.
+                                        <br>
+                                        The variation formula always divides the difference by the initial value (the
+                                        comparison base). Always identify what the base is!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card tip-card h-100 shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-recycle display-5 textgreen mb-3"></i>
+                                    <h5>Markup to Nullify a Discount</h5>
+                                    <p class="text-muted">
+                                        If you applied a discount (e.g., 20%), the markup you need to apply to the
+                                        discounted price to return to the original is always greater than the discount.
+                                        <br>
+                                        This is because the markup is calculated on a smaller base (the discounted
+                                        price). To nullify a 20% discount, you need a 25% markup.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
             <header class="text-center my-5">
-                <h1>Ejercicios Nivel Medio de Porcentajes</h1>
+                <h1>Intermediate Level Percentage Exercises</h1>
                 <p class="subtitle">
-                    Aprende a calcular porcentajes paso a paso con ejemplos nivel medio y casos reales del mundo
-                    cotidiano.
+                    Learn to calculate percentages step by step with intermediate level examples and real-world cases.
                 </p>
             </header>
             <section id="excercisesEasy">
@@ -75,51 +185,51 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-tags"></i>
-                                <h5 class="m-0">Ejercicio 1 — Descuentos Sucesivos en el Precio</h5>
+                                <h5 class="m-0">Exercise 1 — Successive Discounts on Price</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un televisor tiene un precio de lista de S/1,500. En la tienda
-                                    aplican
-                                    dos descuentos
-                                    sucesivos: primero un <strong>20%</strong> por promoción y luego un
-                                    <strong>10%</strong>
-                                    adicional sobre el precio ya rebajado.
-                                    ¿Cuál es el precio final del televisor?
+                                <p class="text-muted">A television has a list price of S/1,500. The store
+                                    applies
+                                    two successive
+                                    discounts: first a 20% for a promotion, and then an
+                                    10%
+                                    additional discount on the already reduced price.
+                                    What is the final price of the television?
                                 </p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio inicial</th>
+                                            <th>Initial Price</th>
                                             <td>S/1,500</td>
                                         </tr>
                                         <tr>
-                                            <th>1° Descuento</th>
+                                            <th>1st Discount</th>
                                             <td>20%</td>
                                         </tr>
                                         <tr>
-                                            <th>2° Descuento</th>
+                                            <th>2nd Discount</th>
                                             <td>10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 1:</strong> Calcular el
-                                    precio
-                                    tras el primer descuento (20%).
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Step 1:</strong> Calculate the
+                                    price
+                                    after the first discount (20%).
                                     <code>1500 × (1 - 0.20) = 1500 × 0.80 = 1,200</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-cart-dash"></i><strong>Paso 2:</strong> Aplicar el
-                                    segundo
-                                    descuento (10%) sobre el nuevo precio.
+                                <div class="step"><i class="bi bi-cart-dash"></i><strong>Step 2:</strong> Apply the
+                                    second
+                                    discount (10%) on the new price.
                                     <code>1200 × (1 - 0.10) = 1200 × 0.90 = 1,080</code>
                                 </div>
 
-                                <div class="result">📺 Precio Final del televisor: <strong>S/1,080</strong>.</div>
+                                <div class="result">📺 Final Price of the TV: <strong>S/1,080</strong>.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -128,45 +238,45 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-receipt"></i>
-                                <h5 class="m-0">Ejercicio 2 — Hallar el Precio Base antes de IVA</h5>
+                                <h5 class="m-0">Exercise 2 — Find the Base Price before VAT</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una factura indica que el costo final de un software, incluyendo
-                                    el
-                                    Impuesto al Valor
-                                    Agregado (IVA) del <strong>18%</strong>, es de **S/295**. ¿Cuál era el precio
+                                <p class="text-muted">An invoice indicates that the final cost of a software, including
+                                    the
+                                    Value Added Tax
+                                    (VAT) of 18%, is S/295. What was the
                                     original
-                                    del software antes de aplicar
-                                    el impuesto?</p>
+                                    price of the software before applying
+                                    the tax?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio con IVA</th>
+                                            <th>Price with VAT</th>
                                             <td>S/295</td>
                                         </tr>
                                         <tr>
-                                            <th>Tasa IVA</th>
+                                            <th>VAT Rate</th>
                                             <td>18%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Paso 1:</strong> Determinar el
-                                    factor de multiplicación del precio.
-                                    <code>100% + 18% = 118%</code> (o <code>1.18</code>)
+                                <div class="step"><i class="bi bi-cash-stack"></i><strong>Step 1:</strong> Determine the
+                                    price multiplication factor.
+                                    <code>100% + 18% = 118%</code> (or <code>1.18</code>)
                                 </div>
 
-                                <div class="step"><i class="bi bi-box"></i><strong>Paso 2:</strong> Dividir el precio
-                                    final
-                                    por el factor para hallar el precio base (Total).
+                                <div class="step"><i class="bi bi-box"></i><strong>Step 2:</strong> Divide the final
+                                    price
+                                    by the factor to find the base price (Total).
                                     <code>295 / 1.18 = 250</code>
                                 </div>
 
-                                <div class="result">🧾 Precio Original (sin IVA): <strong>S/250</strong>.</div>
+                                <div class="result">🧾 Original Price (without VAT): <strong>S/250</strong>.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -175,57 +285,57 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-border-outer"></i>
-                                <h5 class="m-0">Ejercicio 3 — Variación Porcentual en el Área</h5>
+                                <h5 class="m-0">Exercise 3 — Percentage Variation in Area</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un terreno rectangular mide **10 m** de ancho y **20 m** de largo.
-                                    Si
-                                    el ancho se
-                                    incrementa en un **10%** y el largo se reduce en un **10%**. ¿Cuál es el porcentaje
-                                    de
-                                    **variación del área** del terreno?</p>
+                                <p class="text-muted">A rectangular plot measures 10 m wide and 20 m long.
+                                    If
+                                    the width
+                                    is increased by 10% and the length is reduced by 10%. What is the percentage
+                                    of
+                                    area variation of the plot?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Área Inicial</th>
+                                            <th>Initial Area</th>
                                             <td>$10 \times 20 = 200 m^2$</td>
                                         </tr>
                                         <tr>
-                                            <th>Cambio Ancho</th>
+                                            <th>Width Change</th>
                                             <td>+10%</td>
                                         </tr>
                                         <tr>
-                                            <th>Cambio Largo</th>
+                                            <th>Length Change</th>
                                             <td>-10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-arrow-right-up"></i><strong>Paso 1:</strong> Calcular
-                                    las
-                                    nuevas dimensiones.
-                                    <code>Ancho: 10 × 1.10 = 11 m</code>
-                                    <code>Largo: 20 × 0.90 = 18 m</code>
+                                <div class="step"><i class="bi bi-arrow-right-up"></i><strong>Step 1:</strong> Calculate
+                                    the
+                                    new dimensions.
+                                    <code>Width: 10 × 1.10 = 11 m</code>
+                                    <code>Length: 20 × 0.90 = 18 m</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Calcular la
-                                    nueva
-                                    área.
-                                    <code>Área Final: 11 m × 18 m = 198 m^2</code>
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 2:</strong> Calculate the
+                                    new
+                                    area.
+                                    <code>Final Area: 11 m × 18 m = 198 m^2</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-bar-chart-line"></i><strong>Paso 3:</strong> Calcular
-                                    la
-                                    Variación Porcentual.
-                                    <code>Variación = ((198 - 200) / 200) × 100 = -1%</code>
+                                <div class="step"><i class="bi bi-bar-chart-line"></i><strong>Step 3:</strong> Calculate
+                                    the
+                                    Percentage Variation.
+                                    <code>Variation = ((198 - 200) / 200) × 100 = -1%</code>
                                 </div>
 
-                                <div class="result">📐 La variación del área es una reducción del <strong>1%</strong>.
+                                <div class="result">📐 The area variation is a reduction of 1%.
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -234,115 +344,111 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-droplet-fill"></i>
-                                <h5 class="m-0">Ejercicio 4 — Concentración de Soluciones</h5>
+                                <h5 class="m-0">Exercise 4 — Solution Concentration</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Se tienen **20 litros** de una solución que contiene **30%** de
-                                    alcohol. Si se añaden **5 litros** de alcohol puro a la solución, ¿cuál será el
-                                    nuevo
-                                    **porcentaje de concentración** de alcohol en la solución final?</p>
+                                <p class="text-muted">There are 20 liters of a solution containing 30% alcohol.
+                                    If 5 liters of pure alcohol are added to the solution, what will be the
+                                    new
+                                    percentage concentration of alcohol in the final solution?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Volumen Inicial</th>
-                                            <td>20 litros</td>
+                                            <th>Initial Volume</th>
+                                            <td>20 liters</td>
                                         </tr>
                                         <tr>
-                                            <th>Concentración Inicial</th>
+                                            <th>Initial Concentration</th>
                                             <td>30% alcohol</td>
                                         </tr>
                                         <tr>
-                                            <th>Alcohol Añadido</th>
-                                            <td>5 litros</td>
+                                            <th>Alcohol Added</th>
+                                            <td>5 liters</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-x-circle"></i><strong>Paso 1:</strong> Calcular el
-                                    alcohol
-                                    inicial.
-                                    <code>Alcohol Inicial: 20 litros × 0.30 = 6 litros</code>
+                                <div class="step"><i class="bi bi-x-circle"></i><strong>Step 1:</strong> Calculate the
+                                    initial
+                                    alcohol amount.
+                                    <code>Initial Alcohol: 20 liters × 0.30 = 6 liters</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-plus-circle"></i><strong>Paso 2:</strong> Calcular el
-                                    nuevo total de alcohol y el nuevo volumen total.
-                                    <code>Alcohol Final: 6 litros + 5 litros = 11 litros</code>
-                                    <code>Volumen Final: 20 litros + 5 litros = 25 litros</code>
+                                <div class="step"><i class="bi bi-plus-circle"></i><strong>Step 2:</strong> Calculate
+                                    the
+                                    new total alcohol and the new total volume.
+                                    <code>Final Alcohol: 6 liters + 5 liters = 11 liters</code>
+                                    <code>Final Volume: 20 liters + 5 liters = 25 liters</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Calcular la
-                                    nueva
-                                    concentración (Porcentaje).
-                                    <code>Concentración: (11 litros / 25 litros) × 100 = 44%</code>
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 3:</strong> Calculate the
+                                    new
+                                    concentration (Percentage).
+                                    <code>Concentration: (11 liters / 25 liters) × 100 = 44%</code>
                                 </div>
 
-                                <div class="result">🧪 La nueva concentración de alcohol es del <strong>44%</strong>.
+                                <div class="result">🧪 The new alcohol concentration is 44%.
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-
-
-
-
 
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-cart-check"></i>
-                                <h5 class="m-0">Ejercicio 5 — Mejor Opción de Descuento</h5>
+                                <h5 class="m-0">Exercise 5 — Best Discount Option</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una bicicleta cuesta **S/800**. La Tienda A ofrece un descuento
-                                    único del **30%**. La Tienda B ofrece dos descuentos sucesivos del **20%** y luego
-                                    el **10%**. ¿Qué tienda ofrece la bicicleta al precio final más bajo?</p>
+                                <p class="text-muted">A bicycle costs S/800. Store A offers a single discount of
+                                    30%. Store B offers two successive discounts of 20% and then
+                                    10%. Which store offers the bicycle at the lowest final price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio Inicial</th>
+                                            <th>Initial Price</th>
                                             <td>S/800</td>
                                         </tr>
                                         <tr>
-                                            <th>Opción A</th>
-                                            <td>30% (único)</td>
+                                            <th>Option A</th>
+                                            <td>30% (single)</td>
                                         </tr>
                                         <tr>
-                                            <th>Opción B</th>
-                                            <td>20% y luego 10%</td>
+                                            <th>Option B</th>
+                                            <td>20% and then 10%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-shop"></i><strong>Paso 1:</strong> Calcular el precio
-                                    en la Tienda A.
-                                    <code>Precio A = 800 × (1 - 0.30) = 800 × 0.70 = 560</code>
+                                <div class="step"><i class="bi bi-shop"></i><strong>Step 1:</strong> Calculate the price
+                                    at Store A.
+                                    <code>Price A = 800 × (1 - 0.30) = 800 × 0.70 = 560</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-building"></i><strong>Paso 2:</strong> Calcular el
-                                    precio en la Tienda B (sucesivos).
-                                    <code>Precio B = 800 × 0.80 × 0.90 = 800 × 0.72 = 576</code>
+                                <div class="step"><i class="bi bi-building"></i><strong>Step 2:</strong> Calculate the
+                                    price at Store B (successive discounts).
+                                    <code>Price B = 800 × 0.80 × 0.90 = 800 × 0.72 = 576</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-arrow-down-left-square"></i><strong>Paso 3:</strong>
-                                    Comparar resultados.
-                                    <code>S/560 (Tienda A) vs S/576 (Tienda B)</code>
+                                <div class="step"><i class="bi bi-arrow-down-left-square"></i><strong>Step 3:</strong>
+                                    Compare results.
+                                    <code>S/560 (Store A) vs S/576 (Store B)</code>
                                 </div>
 
-                                <div class="result">🛍️ La mejor opción es la Tienda A con un precio de
-                                    <strong>S/560</strong>.
+                                <div class="result">🛍️ The best option is Store A with a price of
+                                    S/560.
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-
 
 
 
@@ -354,49 +460,50 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-currency-dollar"></i>
-                                <h5 class="m-0">Ejercicio 6 — Interés Compuesto Anual Simple</h5>
+                                <h5 class="m-0">Exercise 6 — Simple Annual Compound Interest</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una persona invierte **S/5,000** en una cuenta que ofrece un
-                                    interés anual fijo del **6%**. Si el dinero no se retira, ¿cuánto dinero tendrá el
-                                    inversor al cabo de **dos años**? (Asumir capitalización anual).</p>
+                                <p class="text-muted">A person invests S/5,000 in an account that offers a
+                                    fixed annual interest of 6%. If the money is not withdrawn, how much money will
+                                    the
+                                    investor have after two years? (Assume annual compounding).</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Capital Inicial</th>
+                                            <th>Initial Capital</th>
                                             <td>S/5,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Tasa Anual</th>
+                                            <th>Annual Rate</th>
                                             <td>6%</td>
                                         </tr>
                                         <tr>
-                                            <th>Período</th>
-                                            <td>2 años</td>
+                                            <th>Period</th>
+                                            <td>2 years</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 1:</strong> Determinar el
-                                    factor de crecimiento:
+                                <div class="step"><i class="bi bi-wallet2"></i>Step 1: Determine the
+                                    growth factor:
                                     <code>1 + 0.06 = 1.06</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 2:</strong> Aplicar
-                                    el factor para dos años (potencia).
-                                    <code>Capital Final = 5000 × (1.06)²</code>
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i>Step 2: Apply
+                                    the factor for two years (power).
+                                    <code>Final Capital = 5000 × (1.06)²</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 3:</strong> Calcular el
-                                    resultado final:
+                                <div class="step"><i class="bi bi-calculator"></i>Step 3: Calculate the
+                                    final result:
                                     <code>5000 × 1.1236 = 5,618</code>
                                 </div>
 
-                                <div class="result">💰 Capital Final después de 2 años: <strong>S/5,618</strong>.</div>
+                                <div class="result">💰 Final Capital after 2 years: S/5,618.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -406,131 +513,134 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-people"></i>
-                                <h5 class="m-0">Ejercicio 7 — Proyección de Población (Total)</h5>
+                                <h5 class="m-0">Exercise 7 — Population Projection (Total)</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">En una encuesta electoral de una ciudad, se determinó que
-                                    <strong>22,500 personas</strong> tienen menos de 30 años. Si se sabe que este grupo
-                                    representa exactamente el **45%** de la población total de la ciudad, ¿cuántos
-                                    habitantes tiene la ciudad en total?</p>
+                                <p class="text-muted">In an electoral survey of a city, it was determined that
+                                    22,500 people are under 30 years old. If it is known that this group
+                                    represents exactly 45% of the city's total population, how many
+                                    inhabitants does the city have in total?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Parte (Menores de 30)</th>
-                                            <td>22,500 personas</td>
+                                            <th>Part (Under 30)</th>
+                                            <td>22,500 people</td>
                                         </tr>
                                         <tr>
-                                            <th>Porcentaje Representado</th>
+                                            <th>Percentage Represented</th>
                                             <td>45%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-box-fill"></i><strong>Paso 1:</strong> Aplicar la
-                                    fórmula para calcular el Total.
-                                    <code>Total = (Parte / Porcentaje) × 100</code>
+                                <div class="step"><i class="bi bi-box-fill"></i>Step 1: Apply the
+                                    formula to calculate the Total.
+                                    <code>Total = (Part / Percentage) × 100</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-pie-chart"></i><strong>Paso 2:</strong> Sustituir los
-                                    valores y calcular:
+                                <div class="step"><i class="bi bi-pie-chart"></i>Step 2: Substitute the
+                                    values and calculate:
                                     <code>Total = (22500 / 45) × 100</code>
                                     <code>Total = 500 × 100 = 50,000</code>
                                 </div>
 
-                                <div class="result">🏘️ La población total de la ciudad es de <strong>50,000
-                                        habitantes</strong>.</div>
+                                <div class="result">🏘️ The total population of the city is 50,000
+                                    inhabitants.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-briefcase"></i>
-                                <h5 class="m-0">Ejercicio 8 — Porcentaje de Utilidad sobre el Costo</h5>
+                                <h5 class="m-0">Exercise 8 — Percentage Profit on Cost</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un comerciante compra un lote de mercancía por **S/4,000**
-                                    (Costo). Si logra vender toda la mercancía por **S/5,800** (Venta), ¿cuál es el
-                                    **porcentaje de utilidad** que obtuvo con respecto al costo de la mercancía?</p>
+                                <p class="text-muted">A merchant buys a batch of merchandise for S/4,000
+                                    (Cost). If they manage to sell all the merchandise for S/5,800 (Sale), what is
+                                    the
+                                    percentage profit they obtained with respect to the cost of the merchandise?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Costo Inicial</th>
+                                            <th>Initial Cost</th>
                                             <td>S/4,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Precio de Venta</th>
+                                            <th>Selling Price</th>
                                             <td>S/5,800</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-graph-up"></i><strong>Paso 1:</strong> Calcular la
-                                    Utilidad (Ganancia) neta.
-                                    <code>Utilidad = Venta - Costo = 5800 - 4000 = 1,800</code>
+                                <div class="step"><i class="bi bi-graph-up"></i>Step 1: Calculate the
+                                    net Profit (Gain).
+                                    <code>Profit = Sale - Cost = 5800 - 4000 = 1,800</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 2:</strong> Calcular la
-                                    Utilidad como porcentaje del Costo (Total).
-                                    <code>Porcentaje = (Utilidad / Costo) × 100</code>
+                                <div class="step"><i class="bi bi-percent"></i>Step 2: Calculate the
+                                    Profit as a percentage of the Cost (Total).
+                                    <code>Percentage = (Profit / Cost) × 100</code>
                                     <code>= (1800 / 4000) × 100 = 45%</code>
                                 </div>
 
-                                <div class="result">💵 La utilidad es del <strong>45%</strong> sobre el costo inicial.
+                                <div class="result">💵 The profit is 45% over the initial cost.
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
+
 
 
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-target"></i>
-                                <h5 class="m-0">Ejercicio 9 — Porcentaje de Reducción para Alcanzar una Meta</h5>
+                                <h5 class="m-0">Exercise 9 — Percentage Reduction to Reach a Goal</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un producto se vende actualmente a **S/160**. La gerencia ha
-                                    fijado una meta de reducir el precio a **S/148** para ser más competitivos. ¿De qué
-                                    **porcentaje** debe ser la rebaja para alcanzar este precio meta?</p>
+                                <p class="text-muted">A product is currently sold at S/160 . Management has
+                                    set a goal to reduce the price to S/148 to be more competitive. What
+                                    percentage must the discount be to reach this target price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio Inicial ($V_i$)</th>
+                                            <th>Initial Price ($V_i$)</th>
                                             <td>S/160</td>
                                         </tr>
                                         <tr>
-                                            <th>Precio Meta ($V_f$)</th>
+                                            <th>Target Price ($V_f$)</th>
                                             <td>S/148</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-dash-circle"></i><strong>Paso 1:</strong> Calcular la
-                                    diferencia (monto de la rebaja).
-                                    <code>Rebaja = Inicial - Meta = 160 - 148 = 12</code>
+                                <div class="step"><i class="bi bi-dash-circle"></i> Step 1: Calculate the
+                                    difference (discount amount).
+                                    <code>Discount = Initial - Target = 160 - 148 = 12</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 2:</strong> Calcular la
-                                    rebaja como porcentaje del precio inicial (Total).
-                                    <code>Porcentaje = (Rebaja / Inicial) × 100</code>
+                                <div class="step"><i class="bi bi-percent"></i> Step 2: Calculate the
+                                    discount as a percentage of the initial price (Total).
+                                    <code>Percentage = (Discount / Initial) × 100</code>
                                     <code>= (12 / 160) × 100 = 7.5%</code>
                                 </div>
 
-                                <div class="result">📉 La rebaja necesaria debe ser del <strong>7.5%</strong>.</div>
+                                <div class="result">📉 The necessary discount must be 7.5% .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -541,95 +651,94 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-layers"></i>
-                                <h5 class="m-0">Ejercicio 10 — Porcentaje de un Subgrupo</h5>
+                                <h5 class="m-0">Exercise 10 — Percentage of a Subgroup</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">En una fábrica de 800 empleados, el **60%** trabaja en producción.
-                                    De los empleados de producción, el **25%** son supervisores. ¿Cuántos empleados de
-                                    la fábrica son **supervisores de producción**?</p>
+                                <p class="text-muted">In a factory of 800 employees, 60% work in production.
+                                    Of the production employees, 25% are supervisors. How many employees in the
+                                    factory are production supervisors ?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Total Empleados</th>
+                                            <th>Total Employees</th>
                                             <td>800</td>
                                         </tr>
                                         <tr>
-                                            <th>% Producción</th>
+                                            <th>% Production</th>
                                             <td>60%</td>
                                         </tr>
                                         <tr>
-                                            <th>% Supervisores (de Producción)</th>
+                                            <th>% Supervisors (of Production)</th>
                                             <td>25%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-person-fill"></i><strong>Paso 1:</strong> Calcular el
-                                    número de empleados en Producción.
-                                    <code>Producción = 800 × 0.60 = 480</code>
+                                <div class="step"><i class="bi bi-person-fill"></i> Step 1: Calculate the
+                                    number of employees in Production.
+                                    <code>Production = 800 × 0.60 = 480</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-person-gear"></i><strong>Paso 2:</strong> Calcular los
-                                    supervisores (25% de los de Producción).
-                                    <code>Supervisores = 480 × 0.25 = 120</code>
+                                <div class="step"><i class="bi bi-person-gear"></i> Step 2: Calculate the
+                                    supervisors (25% of Production employees).
+                                    <code>Supervisors = 480 × 0.25 = 120</code>
                                 </div>
 
-                                <div class="result">👨‍💼 El número de supervisores de producción es de <strong>120
-                                        personas</strong>.</div>
+                                <div class="result">👨‍💼 The number of production supervisors is 120
+                                    people .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-
 
 
                     <div class="col-md-6">
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-arrow-up-right"></i>
-                                <h5 class="m-0">Ejercicio 11 — Hallar el Precio Base con Dos Aumentos</h5>
+                                <h5 class="m-0">Exercise 11 — Find the Base Price with Two Increases</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">El precio de una acción es actualmente **S/330**. Este precio es
-                                    el resultado de que la acción subiera un **10%** el mes pasado y otro **10%** este
-                                    mes sobre el valor del mes pasado. ¿Cuál era el precio de la acción hace dos meses?
+                                <p class="text-muted">The price of a stock is currently S/330 . This price is
+                                    the result of the stock rising 10% last month and another 10% this
+                                    month over last month's value. What was the price of the stock two months ago?
                                 </p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio Final</th>
+                                            <th>Final Price</th>
                                             <td>S/330</td>
                                         </tr>
                                         <tr>
-                                            <th>1° Aumento</th>
+                                            <th>1st Increase</th>
                                             <td>+10% (Factor 1.10)</td>
                                         </tr>
                                         <tr>
-                                            <th>2° Aumento</th>
+                                            <th>2nd Increase</th>
                                             <td>+10% (Factor 1.10)</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-graph-up"></i><strong>Paso 1:</strong> Determinar el
-                                    factor de crecimiento acumulado.
-                                    <code>Factor Acumulado = 1.10 × 1.10 = 1.21</code>
+                                <div class="step"><i class="bi bi-graph-up"></i> Step 1: Determine the
+                                    cumulative growth factor.
+                                    <code>Cumulative Factor = 1.10 × 1.10 = 1.21</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-currency-dollar"></i><strong>Paso 2:</strong> Dividir
-                                    el precio final por el factor acumulado para hallar el original (Inverso).
-                                    <code>Precio Original = 330 / 1.21 ≈ 272.73</code>
+                                <div class="step"><i class="bi bi-currency-dollar"></i> Step 2: Divide
+                                    the final price by the cumulative factor to find the original (Inverse).
+                                    <code>Original Price = 330 / 1.21 ≈ 272.73</code>
                                 </div>
 
-                                <div class="result">📈 El precio original de la acción era de aproximadamente
-                                    <strong>S/272.73</strong>.</div>
+                                <div class="result">📈 The original price of the stock was approximately
+                                    S/272.73 .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -638,49 +747,49 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-file-earmark-spreadsheet"></i>
-                                <h5 class="m-0">Ejercicio 12 — Cálculo de Ganancia Neta con Impuestos</h5>
+                                <h5 class="m-0">Exercise 12 — Net Profit Calculation with Taxes</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un servicio se vendió por **S/4,000**. El costo total para proveer
-                                    el servicio fue de **S/2,800**. Sobre la ganancia, la empresa debe pagar un impuesto
-                                    del **15%**. ¿Cuál fue la **ganancia neta** (después de impuestos)?</p>
+                                <p class="text-muted">A service was sold for S/4,000 . The total cost to provide
+                                    the service was S/2,800 . On the profit, the company must pay a tax
+                                    of 15% . What was the net profit (after taxes)?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Ingreso Total</th>
+                                            <th>Total Revenue</th>
                                             <td>S/4,000</td>
                                         </tr>
                                         <tr>
-                                            <th>Costo Total</th>
+                                            <th>Total Cost</th>
                                             <td>S/2,800</td>
                                         </tr>
                                         <tr>
-                                            <th>Impuesto sobre Ganancia</th>
+                                            <th>Tax on Profit</th>
                                             <td>15%</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-graph-up"></i><strong>Paso 1:</strong> Calcular la
-                                    Ganancia Bruta (antes de impuestos).
-                                    <code>Ganancia Bruta = Ingreso - Costo = 4000 - 2800 = 1,200</code>
+                                <div class="step"><i class="bi bi-graph-up"></i><strong>Step 1:</strong> Calculate the
+                                    Gross Profit (before taxes).
+                                    <code>Gross Profit = Revenue - Cost = 4000 - 2800 = 1,200</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 2:</strong> Calcular el
-                                    factor de retención (lo que queda después del impuesto).
-                                    <code>100% - 15% = 85%</code> (o <code>0.85</code>)
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Step 2:</strong> Calculate the
+                                    retention factor (what remains after tax).
+                                    <code>100% - 15% = 85%</code> (or <code>0.85</code>)
                                 </div>
 
-                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Paso 3:</strong> Calcular la
-                                    Ganancia Neta.
-                                    <code>Ganancia Neta = 1200 × 0.85 = 1,020</code>
+                                <div class="step"><i class="bi bi-cash-coin"></i><strong>Step 3:</strong> Calculate the
+                                    Net Profit.
+                                    <code>Net Profit = 1200 × 0.85 = 1,020</code>
                                 </div>
 
-                                <div class="result">📊 La ganancia neta (final) es de **S/1,020**.</div>
+                                <div class="result">📊 The net (final) profit is S/1,020 .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -689,44 +798,44 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-arrow-down-up"></i>
-                                <h5 class="m-0">Ejercicio 13 — Precio Final tras Descuento y Recargo</h5>
+                                <h5 class="m-0">Exercise 13 — Final Price after Discount and Surcharge</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un monitor para computadora cuesta **S/1,200**. Primero se aplica
-                                    un descuento del **20%** por un evento, y luego el precio rebajado recibe un recargo
-                                    del **10%** por el costo de envío. ¿Cuál es el **precio final** del monitor?</p>
+                                <p class="text-muted">A computer monitor costs S/1,200 . First, a 20%
+                                    discount is applied for an event, and then the discounted price receives a 10%
+                                    surcharge for shipping cost. What is the final price of the monitor?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio Inicial</th>
+                                            <th>Initial Price</th>
                                             <td>S/1,200</td>
                                         </tr>
                                         <tr>
-                                            <th>1° Operación</th>
-                                            <td>-20% (Descuento)</td>
+                                            <th>1st Operation</th>
+                                            <td>-20% (Discount)</td>
                                         </tr>
                                         <tr>
-                                            <th>2° Operación</th>
-                                            <td>+10% (Recargo)</td>
+                                            <th>2nd Operation</th>
+                                            <td>+10% (Surcharge)</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-cart-dash"></i><strong>Paso 1:</strong> Aplicar el
-                                    descuento del 20%.
-                                    <code>Precio con Descuento = 1200 × (1 - 0.20) = 1200 × 0.80 = 960</code>
+                                <div class="step"><i class="bi bi-cart-dash"></i><strong>Step 1:</strong> Apply the
+                                    20% discount.
+                                    <code>Price with Discount = 1200 × (1 - 0.20) = 1200 × 0.80 = 960</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-truck"></i><strong>Paso 2:</strong> Aplicar el recargo
-                                    del 10% sobre el precio rebajado.
-                                    <code>Precio Final = 960 × (1 + 0.10) = 960 × 1.10 = 1,056</code>
+                                <div class="step"><i class="bi bi-truck"></i><strong>Step 2:</strong> Apply the 10%
+                                    surcharge on the discounted price.
+                                    <code>Final Price = 960 × (1 + 0.10) = 960 × 1.10 = 1,056</code>
                                 </div>
 
-                                <div class="result">📦 El precio final con descuento y recargo es de **S/1,056**.</div>
+                                <div class="result">📦 The final price with discount and surcharge is S/1,056 .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -735,49 +844,51 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-funnel"></i>
-                                <h5 class="m-0">Ejercicio 14 — Cantidad Necesaria para una Concentración</h5>
+                                <h5 class="m-0">Exercise 14 — Quantity Needed for a Concentration</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un químico tiene **15 litros** de una solución que contiene
-                                    **20%** de ácido. Quiere añadir agua pura (0% ácido) para que la nueva concentración
-                                    de ácido sea del **15%**. ¿Cuántos litros de agua debe añadir?</p>
+                                <p class="text-muted">A chemist has 15 liters of a solution containing 20%
+                                    acid. He wants to add pure water (0% acid) so that the new acid
+                                    concentration is 15% . How many liters of water must he add?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Volumen Inicial</th>
-                                            <td>15 litros</td>
+                                            <th>Initial Volume</th>
+                                            <td>15 liters</td>
                                         </tr>
                                         <tr>
-                                            <th>Concentración Inicial</th>
-                                            <td>20% ácido</td>
+                                            <th>Initial Concentration</th>
+                                            <td>20% acid</td>
                                         </tr>
                                         <tr>
-                                            <th>Concentración Final Deseada</th>
-                                            <td>15% ácido</td>
+                                            <th>Desired Final Concentration</th>
+                                            <td>15% acid</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-droplet-half"></i><strong>Paso 1:</strong> Calcular la
-                                    cantidad de ácido (Parte) que NO cambia.
-                                    <code>Ácido = 15 litros × 0.20 = 3 litros</code>
+                                <div class="step"><i class="bi bi-droplet-half"></i><strong>Step 1:</strong> Calculate
+                                    the
+                                    amount of acid (Part) that does NOT change.
+                                    <code>Acid = 15 liters × 0.20 = 3 liters</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-box"></i><strong>Paso 2:</strong> Usar la fórmula de
-                                    porcentaje inverso para hallar el Volumen Total Final.
-                                    <code>Volumen Total Final = Ácido / Concentración Final = 3 / 0.15 = 20 litros</code>
+                                <div class="step"><i class="bi bi-box"></i><strong>Step 2:</strong> Use the inverse
+                                    percentage
+                                    formula to find the Final Total Volume.
+                                    <code>Final Total Volume = Acid / Final Concentration = 3 / 0.15 = 20 liters</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-plus-lg"></i><strong>Paso 3:</strong> Restar el
-                                    volumen inicial para hallar el agua añadida.
-                                    <code>Agua Añadida = 20 litros - 15 litros = 5 litros</code>
+                                <div class="step"><i class="bi bi-plus-lg"></i><strong>Step 3:</strong> Subtract the
+                                    initial volume to find the water added.
+                                    <code>Water Added = 20 liters - 15 liters = 5 liters</code>
                                 </div>
 
-                                <div class="result">💧 Debe añadir **5 litros** de agua pura.</div>
+                                <div class="result">💧 He must add 5 liters of pure water.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -786,45 +897,46 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-people"></i>
-                                <h5 class="m-0">Ejercicio 15 — Población Total por Inferencia de Subgrupos</h5>
+                                <h5 class="m-0">Exercise 15 — Total Population by Subgroup Inference</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">En una asamblea, el **35%** de los asistentes votó Sí y el **40%**
-                                    votó No. Si las **50 personas** restantes se abstuvieron (no votaron), ¿cuántos
-                                    asistentes había en total en la asamblea?</p>
+                                <p class="text-muted">In an assembly, 35% of attendees voted Yes and 40%
+                                    voted No. If the remaining 50 people abstained (did not vote), how many
+                                    attendees were there in total at the assembly?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>% Votó Sí</th>
+                                            <th>% Voted Yes</th>
                                             <td>35%</td>
                                         </tr>
                                         <tr>
-                                            <th>% Votó No</th>
+                                            <th>% Voted No</th>
                                             <td>40%</td>
                                         </tr>
                                         <tr>
-                                            <th>Abstenciones (Parte)</th>
-                                            <td>50 personas</td>
+                                            <th>Abstentions (Part)</th>
+                                            <td>50 people</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 1:</strong> Calcular el
-                                    porcentaje de las Abstenciones.
-                                    <code>% Abstención = 100% - (35% + 40%) = 100% - 75% = 25%</code>
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 1:</strong> Calculate the
+                                    percentage of Abstentions.
+                                    <code>% Abstention = 100% - (35% + 40%) = 100% - 75% = 25%</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-box"></i><strong>Paso 2:</strong> Usar la fórmula de
-                                    porcentaje inverso para hallar el Total.
-                                    <code>Total = (Parte / Porcentaje) × 100</code>
+                                <div class="step"><i class="bi bi-box"></i><strong>Step 2:</strong> Use the inverse
+                                    percentage
+                                    formula to find the Total.
+                                    <code>Total = (Part / Percentage) × 100</code>
                                     <code>Total = (50 / 25) × 100 = 2 × 100 = 200</code>
                                 </div>
 
-                                <div class="result">👥 El número total de asistentes fue de **200 personas**.</div>
+                                <div class="result">👥 The total number of attendees was 200 people .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -833,50 +945,50 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-tree"></i>
-                                <h5 class="m-0">Ejercicio 16 — Crecimiento de Población Sostenido</h5>
+                                <h5 class="m-0">Exercise 16 — Sustained Population Growth</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Una ciudad tiene una población actual de **120,000 habitantes**.
-                                    Si la tasa de crecimiento anual se mantiene constante en el **3%**, ¿cuál será la
-                                    población de la ciudad dentro de **dos años**? (Asumir crecimiento compuesto).</p>
+                                <p class="text-muted">A city has a current population of 120,000 inhabitants .
+                                    If the annual growth rate remains constant at 3% , what will the
+                                    city's population be in two years ? (Assume compounded growth).</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Población Inicial</th>
-                                            <td>120,000 hab.</td>
+                                            <th>Initial Population</th>
+                                            <td>120,000 inhab.</td>
                                         </tr>
                                         <tr>
-                                            <th>Tasa de Crecimiento</th>
-                                            <td>3% anual</td>
+                                            <th>Growth Rate</th>
+                                            <td>3% annually</td>
                                         </tr>
                                         <tr>
-                                            <th>Período</th>
-                                            <td>2 años</td>
+                                            <th>Period</th>
+                                            <td>2 years</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-wallet2"></i><strong>Paso 1:</strong> Determinar el
-                                    factor de crecimiento:
+                                <div class="step"><i class="bi bi-wallet2"></i><strong>Step 1:</strong> Determine the
+                                    growth factor:
                                     <code>1 + 0.03 = 1.03</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Paso 2:</strong> Aplicar
-                                    el crecimiento compuesto para 2 años.
-                                    <code>Población Final = 120000 × (1.03)²</code>
+                                <div class="step"><i class="bi bi-graph-up-arrow"></i><strong>Step 2:</strong> Apply
+                                    compounded growth for 2 years.
+                                    <code>Final Population = 120000 × (1.03)²</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 3:</strong> Calcular el
-                                    resultado final:
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 3:</strong> Calculate the
+                                    final result:
                                     <code>120000 × 1.0609 = 127,308</code>
                                 </div>
 
-                                <div class="result">📈 Población estimada después de 2 años: **127,308 habitantes**.
+                                <div class="result">📈 Estimated population after 2 years: 127,308 inhabitants .
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -886,53 +998,54 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-clipboard-data"></i>
-                                <h5 class="m-0">Ejercicio 17 — Porcentaje Ponderado en Grupos</h5>
+                                <h5 class="m-0">Exercise 17 — Weighted Percentage in Groups</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">En una universidad, el campus principal tiene **2,000**
-                                    estudiantes, de los cuales el **40%** son extranjeros. El campus satélite tiene
-                                    **500** estudiantes, de los cuales el **60%** son extranjeros. ¿Cuál es el
-                                    **porcentaje total** de estudiantes extranjeros en ambos campus?</p>
+                                <p class="text-muted">At a university, the main campus has 2,000
+                                    students, of which 40% are foreign. The satellite campus has
+                                    500 students, of which 60% are foreign. What is the
+                                    total percentage of foreign students across both campuses?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Total Estudiantes</th>
+                                            <th>Total Students</th>
                                             <td>2500</td>
                                         </tr>
                                         <tr>
-                                            <th>Campus Principal (Extranjeros)</th>
-                                            <td>40% de 2000</td>
+                                            <th>Main Campus (Foreign)</th>
+                                            <td>40% of 2000</td>
                                         </tr>
                                         <tr>
-                                            <th>Campus Satélite (Extranjeros)</th>
-                                            <td>60% de 500</td>
+                                            <th>Satellite Campus (Foreign)</th>
+                                            <td>60% of 500</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-globe"></i><strong>Paso 1:</strong> Calcular el número
-                                    de extranjeros en cada campus.
-                                    <code>Campus Principal: 2000 × 0.40 = 800</code>
-                                    <code>Campus Satélite: 500 × 0.60 = 300</code>
+                                <div class="step"><i class="bi bi-globe"></i><strong>Step 1:</strong> Calculate the
+                                    number
+                                    of foreign students on each campus.
+                                    <code>Main Campus: 2000 × 0.40 = 800</code>
+                                    <code>Satellite Campus: 500 × 0.60 = 300</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-bar-chart-fill"></i><strong>Paso 2:</strong> Calcular
-                                    el Total de Extranjeros y el Total General.
-                                    <code>Total Extranjeros = 800 + 300 = 1,100</code>
-                                    <code>Total General = 2000 + 500 = 2,500</code>
+                                <div class="step"><i class="bi bi-bar-chart-fill"></i><strong>Step 2:</strong> Calculate
+                                    the Total Foreign Students and the Grand Total.
+                                    <code>Total Foreign = 800 + 300 = 1,100</code>
+                                    <code>Grand Total = 2000 + 500 = 2,500</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 3:</strong> Calcular el
-                                    Porcentaje Total.
-                                    <code>Porcentaje = (1100 / 2500) × 100 = 44%</code>
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 3:</strong> Calculate the
+                                    Total Percentage.
+                                    <code>Percentage = (1100 / 2500) × 100 = 44%</code>
                                 </div>
 
-                                <div class="result">🌎 El porcentaje total de estudiantes extranjeros es del **44%**.
+                                <div class="result">🌎 The total percentage of foreign students is 44% .
                                 </div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -942,46 +1055,45 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-receipt"></i>
-                                <h5 class="m-0">Ejercicio 18 — Hallar Precio Antes de Descuento y Recargo</h5>
+                                <h5 class="m-0">Exercise 18 — Find Price Before Discount and Surcharge</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">Un par de zapatos tiene un precio final de **S/144**. Se sabe que
-                                    este precio resultó de aplicar un **20% de descuento** al precio original, y luego
-                                    un **8% de IVA** (impuesto) sobre el precio ya rebajado. ¿Cuál era el **precio
-                                    original** antes de cualquier descuento?</p>
+                                <p class="text-muted">A pair of shoes has a final price of S/144 . It is known that
+                                    this price resulted from applying a 20% discount to the original price, and then
+                                    an 8% VAT (tax) on the already discounted price. What was the original
+                                    price before any discount?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Precio Final</th>
+                                            <th>Final Price</th>
                                             <td>S/144</td>
                                         </tr>
                                         <tr>
-                                            <th>1° Operación (Descuento)</th>
+                                            <th>1st Operation (Discount)</th>
                                             <td>-20% (Factor 0.80)</td>
                                         </tr>
                                         <tr>
-                                            <th>2° Operación (IVA/Recargo)</th>
+                                            <th>2nd Operation (VAT/Surcharge)</th>
                                             <td>+8% (Factor 1.08)</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-arrow-bar-left"></i><strong>Paso 1:</strong> Revertir
-                                    el IVA (Dividir por el factor 1.08).
-                                    <code>Precio con Descuento = 144 / 1.08 = 133.33</code>
+                                <div class="step"><i class="bi bi-arrow-bar-left"></i><strong>Step 1:</strong> Reverse
+                                    the VAT (Divide by factor 1.08).
+                                    <code>Discounted Price = 144 / 1.08 = 133.33</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-arrow-counterclockwise"></i><strong>Paso 2:</strong>
-                                    Revertir el descuento (Dividir por el factor 0.80).
-                                    <code>Precio Original = 133.33 / 0.80 ≈ 166.67</code>
+                                <div class="step"><i class="bi bi-arrow-counterclockwise"></i><strong>Step 2:</strong>
+                                    Reverse the discount (Divide by factor 0.80).
+                                    <code>Original Price = 133.33 / 0.80 ≈ 166.67</code>
                                 </div>
 
-                                <div class="result">💸 El precio original antes de cualquier operación era de
-                                    **S/166.67**.</div>
+                                <div class="result">💸 The original price before any operation was S/166.67 .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -991,46 +1103,48 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-arrow-up-right-square"></i>
-                                <h5 class="m-0">Ejercicio 19 — Hallar el Total por el Monto de Variación</h5>
+                                <h5 class="m-0">Exercise 19 — Find the Total from the Variation Amount</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">La facturación mensual de una empresa **aumentó** en **S/1,200**
-                                    este mes respecto al mes anterior. Si se sabe que este aumento representa
-                                    exactamente un **6%** de la facturación del mes anterior ($V_i$), ¿cuál fue la
-                                    facturación del mes anterior?</p>
+                                <p class="text-muted">A company's monthly revenue increased by S/1,200
+                                    this month compared to the previous month. If it is known that this increase
+                                    represents
+                                    exactly 6% of the previous month's revenue ($V_i$), what was the
+                                    previous month's revenue?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Monto del Aumento (Parte)</th>
+                                            <th>Amount of Increase (Part)</th>
                                             <td>S/1,200</td>
                                         </tr>
                                         <tr>
-                                            <th>% de Aumento</th>
+                                            <th>% Increase</th>
                                             <td>6%</td>
                                         </tr>
                                         <tr>
-                                            <th>Total a Hallar ($V_i$)</th>
-                                            <td>Facturación anterior</td>
+                                            <th>Total to Find ($V_i$)</th>
+                                            <td>Previous revenue</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-box"></i><strong>Paso 1:</strong> Aplicar la fórmula
-                                    de Porcentaje Inverso donde la Parte es el Aumento.
-                                    <code>Total = (Parte / Porcentaje) × 100</code>
+                                <div class="step"><i class="bi bi-box"></i><strong>Step 1:</strong> Apply the Inverse
+                                    Percentage formula where the Part is the Increase.
+                                    <code>Total = (Part / Percentage) × 100</code>
                                 </div>
 
-                                <div class="step"><i class="bi bi-calculator"></i><strong>Paso 2:</strong> Sustituir los
-                                    valores.
-                                    <code>Facturación Anterior = (1200 / 6) × 100</code>
+                                <div class="step"><i class="bi bi-calculator"></i><strong>Step 2:</strong> Substitute
+                                    the
+                                    values.
+                                    <code>Previous Revenue = (1200 / 6) × 100</code>
                                     <code>= 200 × 100 = 20,000</code>
                                 </div>
 
-                                <div class="result">🧾 La facturación del mes anterior fue de **S/20,000**.</div>
+                                <div class="result">🧾 The previous month's revenue was S/20,000 .</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
@@ -1040,50 +1154,50 @@
                         <div class="exercise-card">
                             <div class="exercise-header d-flex align-items-center">
                                 <i class="bi bi-repeat"></i>
-                                <h5 class="m-0">Ejercicio 20 — Recargo para Revertir Descuento</h5>
+                                <h5 class="m-0">Exercise 20 — Surcharge to Reverse Discount</h5>
                             </div>
                             <div class="card-body">
-                                <p class="text-muted">El precio original de un producto fue rebajado un **20%**. ¿Qué
-                                    **porcentaje de recargo** se debe aplicar al precio rebajado para que el precio
-                                    final sea exactamente igual al precio original?</p>
+                                <p class="text-muted">The original price of a product was discounted by 20% . What
+                                    surcharge percentage must be applied to the discounted price so that the final
+                                    price
+                                    is exactly equal to the original price?</p>
                                 <table class="table table-sm table-borderless mb-3">
                                     <tbody>
                                         <tr>
-                                            <th>Descuento Inicial</th>
+                                            <th>Initial Discount</th>
                                             <td>20% (Factor 0.80)</td>
                                         </tr>
                                         <tr>
-                                            <th>Precio Inicial (Total)</th>
-                                            <td>Asumir 100 (o 1)</td>
+                                            <th>Initial Price (Total)</th>
+                                            <td>Assume 100 (or 1)</td>
                                         </tr>
                                         <tr>
-                                            <th>Precio Rebajado</th>
-                                            <td>80 (o 0.8)</td>
+                                            <th>Discounted Price</th>
+                                            <td>80 (or 0.8)</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <div class="step"><i class="bi bi-arrow-bar-down"></i><strong>Paso 1:</strong>
-                                    Determinar la diferencia (monto del recargo).
-                                    <code>Precio Original - Precio Rebajado = 100 - 80 = 20</code> (o $1 - 0.8 = 0.2$)
+                                <div class="step"><i class="bi bi-arrow-bar-down"></i><strong>Step 1:</strong>
+                                    Determine the difference (surcharge amount).
+                                    <code>Original Price - Discounted Price = 100 - 80 = 20</code> (or $1 - 0.8 = 0.2$)
                                 </div>
 
-                                <div class="step"><i class="bi bi-percent"></i><strong>Paso 2:</strong> Calcular la
-                                    Variación Porcentual con respecto al **Precio Rebajado** (la nueva base).
-                                    <code>Recargo % = (Diferencia / Precio Rebajado) × 100</code>
+                                <div class="step"><i class="bi bi-percent"></i><strong>Step 2:</strong> Calculate the
+                                    Percentage Variation with respect to the Discounted Price (the new base).
+                                    <code>Surcharge % = (Difference / Discounted Price) × 100</code>
                                     <code>= (20 / 80) × 100 = 0.25 × 100 = 25%</code>
                                 </div>
 
-                                <div class="result">🔄 El recargo que se debe aplicar es del **25%** sobre el precio
-                                    rebajado.</div>
+                                <div class="result">🔄 The surcharge that must be applied is 25% on the discounted
+                                    price.</div>
 
                                 <a href="/calculator/index.html#calculators" class="calc-btn mt-3"><i
-                                        class="bi bi-calculator"></i> Ver esta
-                                    calculadora</a>
+                                        class="bi bi-calculator"></i> View this
+                                    calculator</a>
                             </div>
                         </div>
                     </div>
-
 
 
 
