@@ -1,0 +1,50 @@
+/* Celulares */
+@media (max-width: 480px) {
+    .maincalculatorcontent {
+        flex-direction: column;
+    }
+
+    .containercalculatormain {
+        margin: 10px;
+        width: auto;
+    }
+
+    .teory {
+        width: 95vw;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .calculator-card {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .calculator-card {
+        margin-top: 20px;
+    }
+    .percentageSection{
+        margin: 30px 0px;
+    }
+    .tabla-redondeada{
+        margin: 5px 0px;
+    }
+    .cardGeneral {
+        margin: 5px 0px;
+    }
+    .calculateCardTop{
+        flex-direction: column;
+        
+    }
+    .flex-center-row_1{
+        flex-direction: column;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 481px) {
+    .container {
+        flex-direction: row;
+        padding: 20px;
+    }
+}

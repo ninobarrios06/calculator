@@ -1,22 +1,22 @@
 
 :root {
-  --primary: #2ed06e; /* Verde principal: energía y frescura */
+  --primary: #2ed06e; 
 
-  --secondary: #1e293b; /* Gris azulado oscuro para títulos o fondos */
+  --secondary: #1e293b; 
 
-  --accent-light: #22c55e; /* Verde claro complementario (para hover o detalles) */
+  --accent-light: #22c55e;
 
-  --accent-contrast: #10b981; /* Verde medio para botones destacados */
+  --accent-contrast: #10b981; 
 
-  --text-color: #374151; /* Gris oscuro para texto principal */
+  --text-color: #374151; 
 
-  --text-muted: #6b7280; /* Gris medio para texto secundario */
+  --text-muted: #6b7280; 
 
-  --bg-light: #f9fafb; /* Fondo claro general */
+  --bg-light: #f9fafb; 
 
-  --bg-card: #ffffff; /* Fondo para tarjetas o secciones elevadas */
+  --bg-card: #ffffff; 
 
-  --border-color: #e5e7eb; /* Bordes suaves */
+  --border-color: #e5e7eb; 
 }
 
 body {

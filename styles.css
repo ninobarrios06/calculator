@@ -131,6 +131,7 @@ ul li {
 .calculator-card {
   background: #ffffff;
   transition: all 0.3s ease;
+  margin-top: 80px;
 }
 
 .calculator-card:hover {
@@ -162,7 +163,10 @@ input:focus {
     text-decoration: none;
 }
 
-
+.flex-center-row_1{
+    align-items: center;
+    display: flex;
+}
 
 .container-fluid {
     background-color: #f5f7fa;
