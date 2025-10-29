@@ -6,7 +6,7 @@
 main {
     background-color: #f5f7fa;
     height: auto;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 html {
@@ -516,7 +516,6 @@ math {
 
 footer {
     text-align: center;
-    margin-top: 50px;
     color: #6c757d;
     font-size: 0.9rem;
 }
