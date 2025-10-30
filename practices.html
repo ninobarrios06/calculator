@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prácticas Interactivas de Porcentajes</title>
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -22,9 +23,10 @@
 
     <style>
         body {
-                font-family: 'Poppins', sans-serif !important;
+            font-family: 'Poppins', sans-serif !important;
 
         }
+
         .practice-card {
             border: none;
             border-radius: 15px;
@@ -33,47 +35,55 @@
             padding: 20px;
             background-color: #ffffff;
         }
+
         .practice-card:hover {
             transform: translateY(-5px);
         }
+
         .section-header {
-            color: #000000; 
+            color: #000000;
             border-bottom: 3px solid #2ed06e;
             padding-bottom: 10px;
             margin-bottom: 20px;
             font-weight: 700;
         }
+
         .game-area {
             background-color: #DEEFE7;
             padding: 20px;
             border-radius: 10px;
         }
+
         .grid-100-container {
             display: flex;
             flex-wrap: wrap;
-            width: 100px; 
+            width: 100px;
             height: 100px;
             border: 1px solid #ccc;
             margin: 5px;
             cursor: pointer;
             position: relative;
         }
+
         .grid-100-cell {
             width: 10%;
             height: 10%;
         }
+
         .filled {
-            background-color: #2ed06e; 
+            background-color: #2ed06e;
         }
+
         .match-area {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             min-height: 150px;
         }
+
         .draggable-value {
             padding: 10px 15px;
-            background-color: #000000; 
+            background-color: #000000;
             border-radius: 8px;
             font-weight: bold;
             cursor: grab;
@@ -81,31 +91,32 @@
             text-align: center;
             color: #ffffff;
         }
+
         .match-target {
-            background-color: #e9ecef; 
+            background-color: #e9ecef;
             border: 2px dashed #adb5bd;
             border-radius: 10px;
             padding: 10px;
-            width: 100px; 
+            width: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .match-item {
             display: flex;
             gap: 10px;
             align-items: center;
             margin-bottom: 15px;
         }
-        
     </style>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href=" index.html">
-                <img src=" pictures/descuento.png" alt="Logo" width="40" height="40"
-                    class="me-2 rounded-circle">
+                <img src=" pictures/descuento.png" alt="Logo" width="40" height="40" class="me-2 rounded-circle">
                 <span class="fw-semibold">CalcPercentage</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -115,7 +126,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-            <a class="nav-item nav-link" href=" index.html">Calculators</a>
+                        <a class="nav-item nav-link" href=" index.html">Calculators</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item nav-link" href=" theory.html">Theory</a>
@@ -126,13 +137,13 @@
                             Exercices
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href=" exercisesEasy.html">Easy</a></li>
-                            <li><a class="dropdown-item" href=" exercisesMedium.html">Intermediate</a></li>
-                            <li><a class="dropdown-item" href=" exercisesAdvanced.html">Advanced</a></li>
+                            <li><a class="dropdown-item" href="/exercisesEasy.html">Easy</a></li>
+                            <li><a class="dropdown-item" href="/exercisesMedium.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="/exercisesAdvanced.html">Advanced</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item nav-link" href=" practices.html">Practicas</a>
+                        <a class="nav-item nav-link" href=" practices.html">Practices</a>
                     </li>
                 </ul>
             </div>
@@ -140,8 +151,10 @@
     </nav>
     <main>
         <div class="container">
-            <h1 class="text-center section-header" style="margin-top: 100px;"><i class="bi bi-bar-chart-fill me-2"></i>Dynamic Percentage Exercises</h1>
-            <p class="text-center text-muted mb-5">Learn and master percentages with our interactive exercises and tools!</p>
+            <h1 class="text-center section-header" style="margin-top: 100px;"><i
+                    class="bi bi-bar-chart-fill me-2"></i>Dynamic Percentage Exercises</h1>
+            <p class="text-center text-muted mb-5">Learn and master percentages with our interactive exercises and
+                tools!</p>
 
             <div class="row">
 
@@ -156,7 +169,8 @@
                             <input type="number" id="calcNumber" class="form-control" placeholder="Número" value="100">
                             <button class="buttonProperties" onclick="calculatePercentage()">Calculate</button>
                         </div>
-                        <div class="alert alert-info mt-3" style="background-color: #DEEFE7; border: none; color: #000000;" id="calcResult">
+                        <div class="alert alert-info mt-3"
+                            style="background-color: #DEEFE7; border: none; color: #000000;" id="calcResult">
                             25% of 100 is 25.
                         </div>
                     </div>
@@ -164,13 +178,15 @@
 
                 <div class="col-lg-6">
                     <div class="practice-card">
-                        <h3 class="section-header"><i class="bi bi-joystick me-2"></i> 2. Game: Guess the Percentage</h3>
+                        <h3 class="section-header"><i class="bi bi-joystick me-2"></i> 2. Game: Guess the Percentage
+                        </h3>
                         <p class="text-muted">What percentage of Y is X? Solve the exercise!</p>
 
                         <div class="game-area p-3">
                             <p class="mb-3 fs-5" id="gameQuestion">Loading question...</p>
                             <div class="input-group mb-3">
-                                <input type="number" id="gameAnswer" class="form-control" placeholder="Tu respuesta (%)">
+                                <input type="number" id="gameAnswer" class="form-control"
+                                    placeholder="Tu respuesta (%)">
                                 <span class="input-group-text">%</span>
                                 <button class="buttonProperties" onclick="checkGameAnswer()">Find out</button>
                                 <button class="btn btn-secondary" onclick="generateNewQuestion()">Next</button>
@@ -186,11 +202,15 @@
                         <p class="text-muted">Observe what a percentage looks like visually.</p>
                         <div class="input-group mb-3 w-50 mx-auto">
                             <span class="input-group-text">Show the</span>
-                            <input type="range" id="visualRange" class="form-range form-control" style="height: 50px;" min="0" max="100" value="50" oninput="updateVisual()">
+                            <input type="range" id="visualRange" class="form-range form-control" style="height: 50px;"
+                                min="0" max="100" value="50" oninput="updateVisual()">
                             <span class="input-group-text" id="visualValue">50%</span>
                         </div>
                         <div class="progress mt-4" style="height: 35px;">
-                            <div id="visualBar" class="progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div id="visualBar"
+                                class="progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-warning"
+                                role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100">
                                 50% Completed
                             </div>
                         </div>
@@ -199,20 +219,23 @@
 
                 <div class="col-lg-12">
                     <div class="practice-card">
-                        <h3 class="section-header"><i class="bi bi-hand-index-thumb me-2"></i> 4. Game: Match the Percentage</h3>
-                        <p class="text-muted">Drag the value on the right to the gray container that represents the number of colored squares.</p>
+                        <h3 class="section-header"><i class="bi bi-hand-index-thumb me-2"></i> 4. Game: Match the
+                            Percentage</h3>
+                        <p class="text-muted">Drag the value on the right to the gray container that represents the
+                            number of colored squares.</p>
 
                         <div class="row">
                             <div class="col-md-7">
                                 <h5>Graphical Representation:</h5>
                                 <div id="matchingTargetArea" class="match-area justify-content-start">
-                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-5">
                                 <h5>Values ​​to Match:</h5>
                                 <div id="matchingSourceArea" class="match-area justify-content-end flex-column">
-                                    </div>
-                                <button class="buttonProperties mt-3 w-100" onclick="checkAllMatches()"><i class="bi bi-check-circle me-2"></i> Check Everything</button>
+                                </div>
+                                <button class="buttonProperties mt-3 w-100" onclick="checkAllMatches()"><i
+                                        class="bi bi-check-circle me-2"></i> Check Everything</button>
                                 <div id="matchFeedback" class="mt-3"></div>
                             </div>
                         </div>
@@ -221,350 +244,353 @@
 
             </div>
             <div class="col-lg-12">
-                    <div class="practice-card">
-                        <h3 class="section-header"><i class="bi bi-lightbulb me-2"></i> 5. Application Problems (Multiple Choice)</h3>
-                        <p class="text-muted">Solve the problem and choose the correct answer.</p>
+                <div class="practice-card">
+                    <h3 class="section-header"><i class="bi bi-lightbulb me-2"></i> 5. Application Problems (Multiple
+                        Choice)</h3>
+                    <p class="text-muted">Solve the problem and choose the correct answer.</p>
 
-                        <div class="p-4">
-                            <p class="mb-4 fs-5" id="mcqQuestion">Loading problem...</p>
-                            
-                            <div id="mcqOptions" class="d-grid gap-2">
-                                </div>
-                            
-                            <div class="d-flex justify-content-between mt-4">
-                                <button class="buttonProperties" style="color: #000000;" onclick="generateMCQ()"><i class="bi bi-arrow-clockwise me-2"></i>Next Problem</button>
-                                <div id="mcqFeedback" class="mt-1"></div>
-                            </div>
+                    <div class="p-4">
+                        <p class="mb-4 fs-5" id="mcqQuestion">Loading problem...</p>
+
+                        <div id="mcqOptions" class="d-grid gap-2">
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <button class="buttonProperties" style="color: #000000;" onclick="generateMCQ()"><i
+                                    class="bi bi-arrow-clockwise me-2"></i>Next Problem</button>
+                            <div id="mcqFeedback" class="mt-1"></div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
 
-    <  <footer class="bg-dark text-white py-5">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2023 CalcPercentage</p>
-      <p class="mb-0 small">2026</p>
-    </div>
-  </footer>
-<script>
-        const mcqProblems = [
-    {
-        id: 1,
-        text: "A store offers a 30% discount on all its products. If a shirt initially costs S/90, what is the final price after the discount?",
-        correctAnswer: 63.00, 
-        distractors: [57.00, 60.00, 70.00]
-    },
-    {
-        id: 2,
-        text: "If 15 out of 75 students in a course failed the exam, what percentage of the total students passed the exam?",
-        correctAnswer: 80.00, 
-        distractors: [20.00, 75.00, 60.00]
-    },
-    {
-        id: 3,
-        text: "The price of a share went from S/50 to S/65. What was the percentage increase in the share price?",
-        correctAnswer: 30.00, 
-        distractors: [15.00, 25.00, 35.00]
-    },
-    {
-        id: 4,
-        text: "A salesman receives a 12% commission for each sale. If he made a sale for S/2,500, how much money did he earn in commission?",
-        correctAnswer: 300.00, 
-        distractors: [250.00, 320.00, 280.00]
-    },
-    {
-        id: 5,
-        text: "A recipe requires 400 grams of flour. If you want to increase the recipe amount by 25%, how many grams of flour do you need now?",
-        correctAnswer: 500.00, 
-        distractors: [425.00, 450.00, 480.00]
-    },
-    {
-        id: 6,
-        text: "In a box of 120 apples, 15% are damaged. How many apples are in good condition?",
-        correctAnswer: 102.00, 
-        distractors: [18.00, 98.00, 105.00]
-    },
-    {
-        id: 7,
-        text: "If the VAT (Value Added Tax) is 18%, and a product costs S/150 *before* VAT, what is the total price including VAT?",
-        correctAnswer: 177.00, 
-        distractors: [168.00, 172.50, 180.00]
-    },
-    {
-        id: 8,
-        text: "A laptop originally priced at S/2,000 is on sale for S/1,700. What is the percentage discount being applied?",
-        correctAnswer: 15.00, 
-        distractors: [10.00, 20.00, 25.00]
-    },
-    {
-        id: 9,
-        text: "After a price increase of 20%, a book now costs S/36. What was the original price of the book before the increase?",
-        correctAnswer: 30.00, 
-        distractors: [28.80, 43.20, 32.00]
-    },
-    {
-        id: 10,
-        text: "You pay S/12 in tip, which represents 10% of the total bill. What was the total amount of the bill (excluding the tip)?",
-        correctAnswer: 120.00, 
-        distractors: [100.00, 132.00, 110.00]
-    }
-];
-        
-        let currentMCQ;
-
-        
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-            return array;
-        }
-
-        function generateMCQ() {
-            const randomIndex = Math.floor(Math.random() * mcqProblems.length);
-            currentMCQ = mcqProblems[randomIndex];
-
-            document.getElementById('mcqQuestion').innerHTML = ` P${currentMCQ.id}:  ${currentMCQ.text}`;
-
-            let options = [...currentMCQ.distractors, currentMCQ.correctAnswer];
-            options = shuffleArray(options); 
-
-            const optionsContainer = document.getElementById('mcqOptions');
-            optionsContainer.innerHTML = ''; 
-            
-            options.forEach((option, index) => {
-                const optionLabel = `Opción ${String.fromCharCode(65 + index)}`;
-                const button = document.createElement('button');
-                button.className = 'btn btn-outline-dark option-btn';
-                button.innerHTML = `${optionLabel}: ${option.toFixed(2)} ${currentMCQ.id === 2 || currentMCQ.id === 3 ? '%' : 'S/'}`; 
-                button.setAttribute('data-value', option.toFixed(2));
-                button.onclick = () => checkMCQAnswer(button, option.toFixed(2));
-                optionsContainer.appendChild(button);
-            });
-            
-            document.getElementById('mcqFeedback').innerHTML = '';
-        }
-
-        function checkMCQAnswer(selectedButton, selectedValue) {
-            const correctAnswerFormatted = currentMCQ.correctAnswer.toFixed(2);
-            const isCorrect = selectedValue === correctAnswerFormatted;
-            const allButtons = document.querySelectorAll('#mcqOptions .option-btn');
-            const feedback = document.getElementById('mcqFeedback');
-
-            allButtons.forEach(btn => {
-                btn.disabled = true;
-                const btnValue = btn.getAttribute('data-value');
-                
-                if (btnValue === correctAnswerFormatted) {
-                    btn.className = 'btn btn-success option-btn'; 
-                } else if (btn === selectedButton && !isCorrect) {
-                    btn.className = 'btn btn-danger option-btn'; 
-                } else {
-                    btn.className = 'btn btn-outline-secondary option-btn'; 
+    < <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2023 CalcPercentage</p>
+            <p class="mb-0 small">2026</p>
+        </div>
+        </footer>
+        <script>
+            const mcqProblems = [
+                {
+                    id: 1,
+                    text: "A store offers a 30% discount on all its products. If a shirt initially costs S/90, what is the final price after the discount?",
+                    correctAnswer: 63.00,
+                    distractors: [57.00, 60.00, 70.00]
+                },
+                {
+                    id: 2,
+                    text: "If 15 out of 75 students in a course failed the exam, what percentage of the total students passed the exam?",
+                    correctAnswer: 80.00,
+                    distractors: [20.00, 75.00, 60.00]
+                },
+                {
+                    id: 3,
+                    text: "The price of a share went from S/50 to S/65. What was the percentage increase in the share price?",
+                    correctAnswer: 30.00,
+                    distractors: [15.00, 25.00, 35.00]
+                },
+                {
+                    id: 4,
+                    text: "A salesman receives a 12% commission for each sale. If he made a sale for S/2,500, how much money did he earn in commission?",
+                    correctAnswer: 300.00,
+                    distractors: [250.00, 320.00, 280.00]
+                },
+                {
+                    id: 5,
+                    text: "A recipe requires 400 grams of flour. If you want to increase the recipe amount by 25%, how many grams of flour do you need now?",
+                    correctAnswer: 500.00,
+                    distractors: [425.00, 450.00, 480.00]
+                },
+                {
+                    id: 6,
+                    text: "In a box of 120 apples, 15% are damaged. How many apples are in good condition?",
+                    correctAnswer: 102.00,
+                    distractors: [18.00, 98.00, 105.00]
+                },
+                {
+                    id: 7,
+                    text: "If the VAT (Value Added Tax) is 18%, and a product costs S/150 *before* VAT, what is the total price including VAT?",
+                    correctAnswer: 177.00,
+                    distractors: [168.00, 172.50, 180.00]
+                },
+                {
+                    id: 8,
+                    text: "A laptop originally priced at S/2,000 is on sale for S/1,700. What is the percentage discount being applied?",
+                    correctAnswer: 15.00,
+                    distractors: [10.00, 20.00, 25.00]
+                },
+                {
+                    id: 9,
+                    text: "After a price increase of 20%, a book now costs S/36. What was the original price of the book before the increase?",
+                    correctAnswer: 30.00,
+                    distractors: [28.80, 43.20, 32.00]
+                },
+                {
+                    id: 10,
+                    text: "You pay S/12 in tip, which represents 10% of the total bill. What was the total amount of the bill (excluding the tip)?",
+                    correctAnswer: 120.00,
+                    distractors: [100.00, 132.00, 110.00]
                 }
-            });
+            ];
 
-            if (isCorrect) {
-                feedback.className = 'alert alert-success';
-                feedback.innerHTML = '¡Correcto! Excelente cálculo.';
-            } else {
-                feedback.className = 'alert alert-danger';
-                feedback.innerHTML = `Incorrecto. La respuesta correcta es ${correctAnswerFormatted} ${currentMCQ.id === 2 || currentMCQ.id === 3 ? '%' : 'S/'}.`;
+            let currentMCQ;
+
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
             }
-        }
-        
-        
-        const matchData = [
-            { id: 10, value: '10%' },
-            { id: 25, value: '1/4' },
-            { id: 33, value: '33%' },
-            { id: 45, value: '0.45' },
-            { id: 50, value: '1/2' },
-            { id: 60, value: '60%' },
-            { id: 72, value: '72%' },
-            { id: 80, value: '4/5' },
-            { id: 95, value: '95%' },
-            { id: 5, value: '5%' }
-        ];
 
-        function createGrid(filledCount, id) {
-            let html = `<div class="match-item">
+            function generateMCQ() {
+                const randomIndex = Math.floor(Math.random() * mcqProblems.length);
+                currentMCQ = mcqProblems[randomIndex];
+
+                document.getElementById('mcqQuestion').innerHTML = ` P${currentMCQ.id}:  ${currentMCQ.text}`;
+
+                let options = [...currentMCQ.distractors, currentMCQ.correctAnswer];
+                options = shuffleArray(options);
+
+                const optionsContainer = document.getElementById('mcqOptions');
+                optionsContainer.innerHTML = '';
+
+                options.forEach((option, index) => {
+                    const optionLabel = `Opción ${String.fromCharCode(65 + index)}`;
+                    const button = document.createElement('button');
+                    button.className = 'btn btn-outline-dark option-btn';
+                    button.innerHTML = `${optionLabel}: ${option.toFixed(2)} ${currentMCQ.id === 2 || currentMCQ.id === 3 ? '%' : 'S/'}`;
+                    button.setAttribute('data-value', option.toFixed(2));
+                    button.onclick = () => checkMCQAnswer(button, option.toFixed(2));
+                    optionsContainer.appendChild(button);
+                });
+
+                document.getElementById('mcqFeedback').innerHTML = '';
+            }
+
+            function checkMCQAnswer(selectedButton, selectedValue) {
+                const correctAnswerFormatted = currentMCQ.correctAnswer.toFixed(2);
+                const isCorrect = selectedValue === correctAnswerFormatted;
+                const allButtons = document.querySelectorAll('#mcqOptions .option-btn');
+                const feedback = document.getElementById('mcqFeedback');
+
+                allButtons.forEach(btn => {
+                    btn.disabled = true;
+                    const btnValue = btn.getAttribute('data-value');
+
+                    if (btnValue === correctAnswerFormatted) {
+                        btn.className = 'btn btn-success option-btn';
+                    } else if (btn === selectedButton && !isCorrect) {
+                        btn.className = 'btn btn-danger option-btn';
+                    } else {
+                        btn.className = 'btn btn-outline-secondary option-btn';
+                    }
+                });
+
+                if (isCorrect) {
+                    feedback.className = 'alert alert-success';
+                    feedback.innerHTML = '¡Correcto! Excelente cálculo.';
+                } else {
+                    feedback.className = 'alert alert-danger';
+                    feedback.innerHTML = `Incorrecto. La respuesta correcta es ${correctAnswerFormatted} ${currentMCQ.id === 2 || currentMCQ.id === 3 ? '%' : 'S/'}.`;
+                }
+            }
+
+
+            const matchData = [
+                { id: 10, value: '10%' },
+                { id: 25, value: '1/4' },
+                { id: 33, value: '33%' },
+                { id: 45, value: '0.45' },
+                { id: 50, value: '1/2' },
+                { id: 60, value: '60%' },
+                { id: 72, value: '72%' },
+                { id: 80, value: '4/5' },
+                { id: 95, value: '95%' },
+                { id: 5, value: '5%' }
+            ];
+
+            function createGrid(filledCount, id) {
+                let html = `<div class="match-item">
                             <div class="grid-100-container" data-match-id="${id}">`;
-            for (let i = 1; i <= 100; i++) {
-                const isFilled = i <= filledCount;
-                html += `<div class="grid-100-cell ${isFilled ? 'filled' : ''}"></div>`;
-            }
-            html += `</div>
+                for (let i = 1; i <= 100; i++) {
+                    const isFilled = i <= filledCount;
+                    html += `<div class="grid-100-cell ${isFilled ? 'filled' : ''}"></div>`;
+                }
+                html += `</div>
                      <div class="match-target" data-target-id="${id}"></div>
                      </div>`;
-            return html;
-        }
+                return html;
+            }
 
-        function createDraggableValue(data) {
-            return `<div class="draggable-value" data-value-id="${data.id}">${data.value}</div>`;
-        }
+            function createDraggableValue(data) {
+                return `<div class="draggable-value" data-value-id="${data.id}">${data.value}</div>`;
+            }
 
-        function renderMatchingGame() {
-            const targetArea = document.getElementById('matchingTargetArea');
-            const sourceArea = document.getElementById('matchingSourceArea');
-            
-            let targetHtml = '';
-            matchData.forEach(item => {
-                targetHtml += createGrid(item.id, item.id);
-            });
-            targetArea.innerHTML = targetHtml;
-            
-            const shuffledData = [...matchData].sort(() => Math.random() - 0.5);
-            let sourceHtml = '';
-            shuffledData.forEach(item => {
-                sourceHtml += createDraggableValue(item);
-            });
-            sourceArea.innerHTML = sourceHtml;
-        }
+            function renderMatchingGame() {
+                const targetArea = document.getElementById('matchingTargetArea');
+                const sourceArea = document.getElementById('matchingSourceArea');
 
-        function checkAllMatches() {
-            const targets = document.querySelectorAll('.match-target');
-            let correctCount = 0;
-            targets.forEach(target => {
-                const targetId = target.dataset.targetId;
-                const draggedItem = target.querySelector('.draggable-value');
+                let targetHtml = '';
+                matchData.forEach(item => {
+                    targetHtml += createGrid(item.id, item.id);
+                });
+                targetArea.innerHTML = targetHtml;
 
-                if (draggedItem) {
-                    const valueId = draggedItem.dataset.valueId;
-                    if (targetId == valueId) {
-                        correctCount++;
-                        target.style.backgroundColor = '#d4edda'; 
-                        draggedItem.style.backgroundColor = '#198754'; 
-                        draggedItem.style.color = 'white';
+                const shuffledData = [...matchData].sort(() => Math.random() - 0.5);
+                let sourceHtml = '';
+                shuffledData.forEach(item => {
+                    sourceHtml += createDraggableValue(item);
+                });
+                sourceArea.innerHTML = sourceHtml;
+            }
+
+            function checkAllMatches() {
+                const targets = document.querySelectorAll('.match-target');
+                let correctCount = 0;
+                targets.forEach(target => {
+                    const targetId = target.dataset.targetId;
+                    const draggedItem = target.querySelector('.draggable-value');
+
+                    if (draggedItem) {
+                        const valueId = draggedItem.dataset.valueId;
+                        if (targetId == valueId) {
+                            correctCount++;
+                            target.style.backgroundColor = '#d4edda';
+                            draggedItem.style.backgroundColor = '#198754';
+                            draggedItem.style.color = 'white';
+                        } else {
+                            target.style.backgroundColor = '#f8d7da';
+                            draggedItem.style.backgroundColor = '#dc3545';
+                            draggedItem.style.color = 'white';
+                        }
                     } else {
-                        target.style.backgroundColor = '#f8d7da'; 
-                        draggedItem.style.backgroundColor = '#dc3545';
-                        draggedItem.style.color = 'white';
+                        target.style.backgroundColor = '#fff3cd';
                     }
-                } else {
-                    target.style.backgroundColor = '#fff3cd'; 
-                }
-            });
+                });
 
-            const feedback = document.getElementById('matchFeedback');
-            feedback.className = correctCount === matchData.length ? 'alert alert-success' : 'alert alert-warning';
-            feedback.innerHTML = `¡Resultado: ${correctCount} de ${matchData.length} correctos!`;
-        }
-        
-        function initializeSortable() {
-            new Sortable(document.getElementById('matchingSourceArea'), {
-                group: {
-                    name: 'shared',
-                    pull: 'clone', 
-                    put: false 
-                },
-                animation: 150,
-                sort: true
-            });
+                const feedback = document.getElementById('matchFeedback');
+                feedback.className = correctCount === matchData.length ? 'alert alert-success' : 'alert alert-warning';
+                feedback.innerHTML = `¡Resultado: ${correctCount} de ${matchData.length} correctos!`;
+            }
 
-            document.querySelectorAll('.match-target').forEach(target => {
-                new Sortable(target, {
+            function initializeSortable() {
+                new Sortable(document.getElementById('matchingSourceArea'), {
                     group: {
                         name: 'shared',
-                        put: true
+                        pull: 'clone',
+                        put: false
                     },
                     animation: 150,
-                    forceFallback: true,
-                    onAdd: function (evt) {
-                        if (evt.to.children.length > 1) {
-                            evt.from.appendChild(evt.item); 
-                        }
-                    },
-                    sort: false 
+                    sort: true
                 });
-            });
-        }
-        
-        function calculatePercentage() {
-            const percent = parseFloat(document.getElementById('calcPercent').value);
-            const number = parseFloat(document.getElementById('calcNumber').value);
-            const resultElement = document.getElementById('calcResult');
 
-            if (isNaN(percent) || isNaN(number)) {
-                resultElement.className = 'alert alert-danger mt-3';
-                resultElement.innerHTML = 'Por favor, introduce números válidos.';
-                return;
+                document.querySelectorAll('.match-target').forEach(target => {
+                    new Sortable(target, {
+                        group: {
+                            name: 'shared',
+                            put: true
+                        },
+                        animation: 150,
+                        forceFallback: true,
+                        onAdd: function (evt) {
+                            if (evt.to.children.length > 1) {
+                                evt.from.appendChild(evt.item);
+                            }
+                        },
+                        sort: false
+                    });
+                });
             }
 
-            const result = (percent / 100) * number;
-            resultElement.className = 'alert alert-info mt-3';
-            resultElement.innerHTML = `El  ${percent}% de ${number}  es  ${result.toFixed(2)} .`;
-        }
+            function calculatePercentage() {
+                const percent = parseFloat(document.getElementById('calcPercent').value);
+                const number = parseFloat(document.getElementById('calcNumber').value);
+                const resultElement = document.getElementById('calcResult');
 
-        let correctAnswer;
-        let numX, numY;
+                if (isNaN(percent) || isNaN(number)) {
+                    resultElement.className = 'alert alert-danger mt-3';
+                    resultElement.innerHTML = 'Por favor, introduce números válidos.';
+                    return;
+                }
 
-        function generateNewQuestion() {
-            numY = Math.floor(Math.random() * 151) + 50;
-            let tempX = Math.floor(Math.random() * numY * 0.8) + 10;
-            numX = tempX; 
-            
-            correctAnswer = (numX / numY) * 100;
-
-            document.getElementById('gameQuestion').innerHTML = `¿Qué porcentaje de  ${numY}  es  ${numX} ? (Redondea a 2 decimales)`;
-            document.getElementById('gameAnswer').value = '';
-            document.getElementById('gameFeedback').innerHTML = '';
-        }
-
-        function checkGameAnswer() {
-            const userAnswer = parseFloat(document.getElementById('gameAnswer').value);
-            const feedbackElement = document.getElementById('gameFeedback');
-            const tolerance = 0.5; 
-
-            if (isNaN(userAnswer)) {
-                feedbackElement.className = 'alert alert-warning';
-                feedbackElement.innerHTML = 'Por favor, introduce tu respuesta.';
-                return;
+                const result = (percent / 100) * number;
+                resultElement.className = 'alert alert-info mt-3';
+                resultElement.innerHTML = `El  ${percent}% de ${number}  es  ${result.toFixed(2)} .`;
             }
 
-            const isCorrect = Math.abs(userAnswer - correctAnswer) <= tolerance;
-            const preciseAnswer = correctAnswer.toFixed(2);
+            let correctAnswer;
+            let numX, numY;
 
-            if (isCorrect) {
-                feedbackElement.className = 'alert alert-success';
-                feedbackElement.innerHTML = `¡Correcto! El porcentaje es ${preciseAnswer}%.`;
-            } else {
-                feedbackElement.className = 'alert alert-danger';
-                feedbackElement.innerHTML = `Incorrecto. La respuesta precisa es  ${preciseAnswer}% . Sigue practicando.`;
+            function generateNewQuestion() {
+                numY = Math.floor(Math.random() * 151) + 50;
+                let tempX = Math.floor(Math.random() * numY * 0.8) + 10;
+                numX = tempX;
+
+                correctAnswer = (numX / numY) * 100;
+
+                document.getElementById('gameQuestion').innerHTML = `¿Qué porcentaje de  ${numY}  es  ${numX} ? (Redondea a 2 decimales)`;
+                document.getElementById('gameAnswer').value = '';
+                document.getElementById('gameFeedback').innerHTML = '';
             }
-        }
 
+            function checkGameAnswer() {
+                const userAnswer = parseFloat(document.getElementById('gameAnswer').value);
+                const feedbackElement = document.getElementById('gameFeedback');
+                const tolerance = 0.5;
 
-        function updateVisual() {
-            const rangeValue = document.getElementById('visualRange').value;
-            const visualValueElement = document.getElementById('visualValue');
-            const visualBarElement = document.getElementById('visualBar');
+                if (isNaN(userAnswer)) {
+                    feedbackElement.className = 'alert alert-warning';
+                    feedbackElement.innerHTML = 'Por favor, introduce tu respuesta.';
+                    return;
+                }
 
-            visualValueElement.textContent = `${rangeValue}%`;
-            visualBarElement.style.width = `${rangeValue}%`;
-            visualBarElement.setAttribute('aria-valuenow', rangeValue);
-            visualBarElement.innerHTML = `${rangeValue}% Completado`;
+                const isCorrect = Math.abs(userAnswer - correctAnswer) <= tolerance;
+                const preciseAnswer = correctAnswer.toFixed(2);
 
-            if (rangeValue < 25) {
-                visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-danger';
-            } else if (rangeValue < 75) {
-                visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-warning';
-            } else {
-                visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-success';
+                if (isCorrect) {
+                    feedbackElement.className = 'alert alert-success';
+                    feedbackElement.innerHTML = `¡Correcto! El porcentaje es ${preciseAnswer}%.`;
+                } else {
+                    feedbackElement.className = 'alert alert-danger';
+                    feedbackElement.innerHTML = `Incorrecto. La respuesta precisa es  ${preciseAnswer}% . Sigue practicando.`;
+                }
             }
-        }
-        
-        window.onload = function() {
-            calculatePercentage();
-            generateNewQuestion();
-            updateVisual(); 
-            renderMatchingGame();
-            initializeSortable();
-            generateMCQ(); 
-        };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+            function updateVisual() {
+                const rangeValue = document.getElementById('visualRange').value;
+                const visualValueElement = document.getElementById('visualValue');
+                const visualBarElement = document.getElementById('visualBar');
+
+                visualValueElement.textContent = `${rangeValue}%`;
+                visualBarElement.style.width = `${rangeValue}%`;
+                visualBarElement.setAttribute('aria-valuenow', rangeValue);
+                visualBarElement.innerHTML = `${rangeValue}% Completado`;
+
+                if (rangeValue < 25) {
+                    visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-danger';
+                } else if (rangeValue < 75) {
+                    visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-warning';
+                } else {
+                    visualBarElement.className = 'progress-bar progress-bar-striped progress-bar-animated progress-bar-labeled bg-success';
+                }
+            }
+
+            window.onload = function () {
+                calculatePercentage();
+                generateNewQuestion();
+                updateVisual();
+                renderMatchingGame();
+                initializeSortable();
+                generateMCQ();
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
