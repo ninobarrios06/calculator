@@ -327,14 +327,16 @@ math {
 .graphichAmount1,
 .totalGraphicTotal,
 .totalGraphic {
-    height: 25px;
+    height: 50px;
     width: 100%;
-    background-color: rgb(168, 169, 170);
+    background-color: rgb(237, 239, 241);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    border: 3px solid #2ed06e;
+
 }
 
 .graphichChangue2,
@@ -351,7 +353,7 @@ math {
     align-items: center;
     justify-content: center;
     transition: width 1s ease;
-    border-radius: 5px 0 0 5px;
+    border-radius: 50px 0 0 50px;
 
 }
 
@@ -367,7 +369,7 @@ math {
     justify-content: center;
     width: 75%;
     transition: width 1s ease;
-    border-radius: 0 5px 5px 0px;
+    border-radius: 0 50px 50px 0px;
     height: 25px;
 
 }
@@ -380,7 +382,7 @@ math {
     align-items: center;
     justify-content: center;
     transition: width 1s ease;
-    border-radius: 5px 0 0 5px;
+    border-radius: 50px 0 0 50px;
 
 }
 
@@ -392,7 +394,7 @@ math {
     justify-content: center;
     width: 75%;
     transition: width 1s ease;
-    border-radius: 0 5px 5px 0px;
+    border-radius: 0 50px 50px 0px;
     height: 25px;
 
 }
