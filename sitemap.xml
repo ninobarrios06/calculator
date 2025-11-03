@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/</loc>
+        <loc>https://www.mypercentagecalculator.online</loc>
         <lastmod>2025-10-29</lastmod> <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/theory.html</loc>
+        <loc>https://www.mypercentagecalculator.online/theory</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/practices.html</loc>
+        <loc>https://www.mypercentagecalculator.online/practices</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/exercisesEasy.html</loc>
+        <loc>https://www.mypercentagecalculator.online/exercisesEasy</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/exercisesMedium.html</loc>
+        <loc>https://www.mypercentagecalculator.online/exercisesMedium</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://www.mypercentagecalculator.online/exercisesAdvanced.html</loc>
+        <loc>https://www.mypercentagecalculator.online/exercisesAdvanced</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
